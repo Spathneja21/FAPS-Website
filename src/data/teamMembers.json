@@ -1,0 +1,122 @@
+[
+    {
+        "id": "tm-001",
+        "name": "Aanya Sharma",
+        "role": "President",
+        "category": "Core Council",
+        "bio": "A visionary leader blending traditional art with modern aesthetics. Passionate about building creative communities.",
+        "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=face",
+        "socialLinks": {
+            "instagram": "https://instagram.com/aanyasharma",
+            "linkedin": "https://linkedin.com/in/aanyasharma"
+        }
+    },
+    {
+        "id": "tm-002",
+        "name": "Rohan Mehta",
+        "role": "Vice President",
+        "category": "Core Council",
+        "bio": "Photographer and storyteller. Believes every frame holds a universe waiting to be discovered.",
+        "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+        "socialLinks": {
+            "instagram": "https://instagram.com/rohanmehta",
+            "linkedin": "https://linkedin.com/in/rohanmehta"
+        }
+    },
+    {
+        "id": "tm-003",
+        "name": "Priya Kapoor",
+        "role": "Creative Director",
+        "category": "Core Council",
+        "bio": "Digital artist and UI designer. Turns pixels into poetry and interfaces into experiences.",
+        "photo": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
+        "socialLinks": {
+            "instagram": "https://instagram.com/priyakapoor",
+            "linkedin": "https://linkedin.com/in/priyakapoor"
+        }
+    },
+    {
+        "id": "tm-004",
+        "name": "Arjun Verma",
+        "role": "Photography Lead",
+        "category": "Team Lead",
+        "bio": "Street photographer with an eye for the extraordinary in the ordinary. Canon enthusiast.",
+        "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
+        "socialLinks": {
+            "instagram": "https://instagram.com/arjunverma",
+            "linkedin": "https://linkedin.com/in/arjunverma"
+        }
+    },
+    {
+        "id": "tm-005",
+        "name": "Ishita Nair",
+        "role": "Events Coordinator",
+        "category": "Team Lead",
+        "bio": "The one who makes things happen. From exhibitions to workshops — if it's an event, she's behind it.",
+        "photo": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=face",
+        "socialLinks": {
+            "instagram": "https://instagram.com/ishitanair",
+            "linkedin": "https://linkedin.com/in/ishitanair"
+        }
+    },
+    {
+        "id": "tm-006",
+        "name": "Kabir Singh",
+        "role": "Design Lead",
+        "category": "Team Lead",
+        "bio": "Graphic designer and typography nerd. Obsessed with visual systems and brand consistency.",
+        "photo": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+        "socialLinks": {
+            "instagram": "https://instagram.com/kabirsingh",
+            "linkedin": "https://linkedin.com/in/kabirsingh"
+        }
+    },
+    {
+        "id": "tm-007",
+        "name": "Diya Patel",
+        "role": "Social Media Manager",
+        "category": "Team Lead",
+        "bio": "Content creator and social strategist. Amplifies the society's voice across platforms.",
+        "photo": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&h=400&fit=crop&crop=face",
+        "socialLinks": {
+            "instagram": "https://instagram.com/diyapatel",
+            "linkedin": "https://linkedin.com/in/diyapatel"
+        }
+    },
+    {
+        "id": "tm-008",
+        "name": "Vikram Rao",
+        "role": "Technical Lead",
+        "category": "Team Lead",
+        "bio": "Web developer and creative coder. Bridges the gap between art and technology.",
+        "photo": "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=400&fit=crop&crop=face",
+        "socialLinks": {
+            "instagram": "https://instagram.com/vikramrao",
+            "linkedin": "https://linkedin.com/in/vikramrao"
+        }
+    },
+    {
+        "id": "tm-009",
+        "name": "Prof. Meera Joshi",
+        "role": "Faculty Advisor",
+        "category": "Faculty Advisor",
+        "bio": "Professor of Fine Arts with 15+ years of experience. Guides the society's artistic direction.",
+        "photo": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face",
+        "socialLinks": {
+            "instagram": "https://instagram.com/profmeerajoshi",
+            "linkedin": "https://linkedin.com/in/profmeerajoshi"
+        }
+    },
+    {
+        "id": "tm-010",
+        "name": "Ananya Gupta",
+        "role": "Member",
+        "category": "Member",
+        "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
+        "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
+        "socialLinks": {
+            "instagram": "https://instagram.com/ananyagupta",
+            "linkedin": "https://linkedin.com/in/ananyagupta"
+        }
+    }
+]

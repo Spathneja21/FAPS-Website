@@ -1,0 +1,194 @@
+[
+    {
+        "id": "gal-001",
+        "title": "Golden Hour at the Campus Lake",
+        "category": "Photography",
+        "imageUrl": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
+        "photographer": "Arjun Verma",
+        "date": "2025-11-20"
+    },
+    {
+        "id": "gal-002",
+        "title": "Abstract Waves",
+        "category": "Art",
+        "imageUrl": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=800&h=1000&fit=crop",
+        "photographer": "Priya Kapoor",
+        "date": "2025-11-15"
+    },
+    {
+        "id": "gal-003",
+        "title": "City Lights After Rain",
+        "category": "Photography",
+        "imageUrl": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=800&h=600&fit=crop",
+        "photographer": "Rohan Mehta",
+        "date": "2025-11-10"
+    },
+    {
+        "id": "gal-004",
+        "title": "Digital Dreamscape",
+        "category": "Digital Design",
+        "imageUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&h=800&fit=crop",
+        "photographer": "Kabir Singh",
+        "date": "2025-11-05"
+    },
+    {
+        "id": "gal-005",
+        "title": "Portrait in Natural Light",
+        "category": "Photography",
+        "imageUrl": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&h=1000&fit=crop",
+        "photographer": "Diya Patel",
+        "date": "2025-10-28"
+    },
+    {
+        "id": "gal-006",
+        "title": "Watercolor Botanicals",
+        "category": "Art",
+        "imageUrl": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800&h=700&fit=crop",
+        "photographer": "Ananya Gupta",
+        "date": "2025-10-22"
+    },
+    {
+        "id": "gal-007",
+        "title": "Neon Typography",
+        "category": "Digital Design",
+        "imageUrl": "https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=800&h=800&fit=crop",
+        "photographer": "Kabir Singh",
+        "date": "2025-10-18"
+    },
+    {
+        "id": "gal-008",
+        "title": "Morning Fog in the Valley",
+        "category": "Photography",
+        "imageUrl": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=600&fit=crop",
+        "photographer": "Arjun Verma",
+        "date": "2025-10-12"
+    },
+    {
+        "id": "gal-009",
+        "title": "Collage of Cultures",
+        "category": "Mixed Media",
+        "imageUrl": "https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=800&h=900&fit=crop",
+        "photographer": "Priya Kapoor",
+        "date": "2025-10-05"
+    },
+    {
+        "id": "gal-010",
+        "title": "The Old Bookstore",
+        "category": "Photography",
+        "imageUrl": "https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=800&h=600&fit=crop",
+        "photographer": "Rohan Mehta",
+        "date": "2025-09-28"
+    },
+    {
+        "id": "gal-011",
+        "title": "Geometric Harmony",
+        "category": "Digital Design",
+        "imageUrl": "https://images.unsplash.com/photo-1550859492-d5da9d8e45f3?w=800&h=800&fit=crop",
+        "photographer": "Vikram Rao",
+        "date": "2025-09-22"
+    },
+    {
+        "id": "gal-012",
+        "title": "Canvas Textures",
+        "category": "Art",
+        "imageUrl": "https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=800&h=900&fit=crop",
+        "photographer": "Ananya Gupta",
+        "date": "2025-09-15"
+    },
+    {
+        "id": "gal-013",
+        "title": "Street Shadows",
+        "category": "Photography",
+        "imageUrl": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&h=600&fit=crop",
+        "photographer": "Arjun Verma",
+        "date": "2025-09-10"
+    },
+    {
+        "id": "gal-014",
+        "title": "Fluid Motion",
+        "category": "Mixed Media",
+        "imageUrl": "https://images.unsplash.com/photo-1574169208507-84376144848b?w=800&h=800&fit=crop",
+        "photographer": "Priya Kapoor",
+        "date": "2025-09-05"
+    },
+    {
+        "id": "gal-015",
+        "title": "Sunset Silhouettes",
+        "category": "Photography",
+        "imageUrl": "https://images.unsplash.com/photo-1495616811223-4d98c6e9c869?w=800&h=600&fit=crop",
+        "photographer": "Diya Patel",
+        "date": "2025-08-30"
+    },
+    {
+        "id": "gal-016",
+        "title": "Poster Series: Campus Life",
+        "category": "Digital Design",
+        "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&h=1000&fit=crop",
+        "photographer": "Kabir Singh",
+        "date": "2025-08-25"
+    },
+    {
+        "id": "gal-017",
+        "title": "Oil on Canvas: Serenity",
+        "category": "Art",
+        "imageUrl": "https://images.unsplash.com/photo-1549490349-8643362247b5?w=800&h=700&fit=crop",
+        "photographer": "Ananya Gupta",
+        "date": "2025-08-18"
+    },
+    {
+        "id": "gal-018",
+        "title": "Architectural Details",
+        "category": "Photography",
+        "imageUrl": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&h=600&fit=crop",
+        "photographer": "Rohan Mehta",
+        "date": "2025-08-12"
+    },
+    {
+        "id": "gal-019",
+        "title": "Mixed Media Installation",
+        "category": "Mixed Media",
+        "imageUrl": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&h=800&fit=crop",
+        "photographer": "Ishita Nair",
+        "date": "2025-08-05"
+    },
+    {
+        "id": "gal-020",
+        "title": "Macro World",
+        "category": "Photography",
+        "imageUrl": "https://images.unsplash.com/photo-1490750967868-88aa4f44baee?w=800&h=700&fit=crop",
+        "photographer": "Arjun Verma",
+        "date": "2025-07-28"
+    },
+    {
+        "id": "gal-021",
+        "title": "Brand Identity Concept",
+        "category": "Digital Design",
+        "imageUrl": "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800&h=800&fit=crop",
+        "photographer": "Vikram Rao",
+        "date": "2025-07-20"
+    },
+    {
+        "id": "gal-022",
+        "title": "Ink & Paper Dreams",
+        "category": "Art",
+        "imageUrl": "https://images.unsplash.com/photo-1582201942988-13e60e4556ee?w=800&h=900&fit=crop",
+        "photographer": "Priya Kapoor",
+        "date": "2025-07-15"
+    },
+    {
+        "id": "gal-023",
+        "title": "The Chai Wallah",
+        "category": "Photography",
+        "imageUrl": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&h=600&fit=crop",
+        "photographer": "Rohan Mehta",
+        "date": "2025-07-08"
+    },
+    {
+        "id": "gal-024",
+        "title": "Textured Abstraction",
+        "category": "Mixed Media",
+        "imageUrl": "https://images.unsplash.com/photo-1482160549825-59d1b23cb208?w=800&h=800&fit=crop",
+        "photographer": "Ananya Gupta",
+        "date": "2025-07-01"
+    }
+]

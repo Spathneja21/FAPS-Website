@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #131313;
+  --color-secondary: #0a0a0a;
+  --color-accent: #F5F5F5;
+  --color-accent-dim: #999999;
+  --color-surface: #1a1a1a;
+  --color-surface-hover: #242424;
+  --color-border: #2a2a2a;
+  --color-text: #F5F5F5;
+  --color-text-dim: #888888;
+  --color-cream: #F5F0E8;
+
+  --font-display: "Instrument Serif", serif;
+  --font-display-alt: "Playfair Display", serif;
+  --font-script: "Pinyon Script", cursive;
+  --font-body: "Inter", sans-serif;
+  --font-heading: "Outfit", sans-serif;
+  --font-manrope: "Manrope", sans-serif;
+  --font-luxurious: "Luxurious Script", cursive;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* Global styles */
+body {
+  background: #131313;
+  color: #F5F5F5;
+  cursor: none;
+  overflow-x: hidden;
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+/* Hide cursor on all interactive elements */
+a,
+button,
+input,
+textarea,
+select {
+  cursor: none;
+}
+
+/* Selection */
+::selection {
+  background: rgba(245, 245, 245, 0.2);
+  color: #F5F5F5;
+}
+
+/* Minimal scrollbar — VerticalDock progress replaces it */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(245, 245, 245, 0.08);
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 245, 245, 0.15);
+}
+
+/* Utility classes */
+.text-gradient {
+  background: linear-gradient(135deg, #fff 0%, #888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.font-script {
+  font-family: var(--font-script), cursive;
+}
+
+.font-display {
+  font-family: var(--font-display), serif;
+}
+
+.font-manrope {
+  font-family: var(--font-manrope), system-ui, sans-serif;
+}
+
+.font-luxurious {
+  font-family: var(--font-luxurious), cursive;
+}
+
+.letter-spaced {
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-family: var(--font-body), system-ui, sans-serif;
+  font-weight: 300;
+  font-size: 0.75rem;
+}
+
+/* Loading screen */
+@keyframes slideUp {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes fadeInLetter {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blurIn {
+  0% {
+    opacity: 0;
+    filter: blur(20px);
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0);
+  }
+}
+
+.animate-blurIn {
+  animation: blurIn 0.8s ease-out forwards;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
