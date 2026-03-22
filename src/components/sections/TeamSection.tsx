@@ -9,18 +9,18 @@ const containerVariants = {
     hidden: {},
     visible: {
         transition: {
-            staggerChildren: 0.1,
-            delayChildren: 0.2,
+            staggerChildren: 0.05,
+            delayChildren: 0.1,
         },
     },
 };
 
 const cardVariants = {
-    hidden: { opacity: 0, y: 40 },
+    hidden: { opacity: 0, y: 20 },
     visible: {
         opacity: 1,
         y: 0,
-        transition: { duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] as const },
+        transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] as const },
     },
 };
 
@@ -55,20 +55,17 @@ export default function TeamSection() {
                 </div>
 
                 {/* Team grid */}
-                <motion.div
-                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-1"
-                    variants={containerVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.1 }}
-                >
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-1">
                     {teamMembers.map((member, index) => (
                         <motion.div
-                            key={index}
-                            variants={cardVariants}
+                            key={member.id || index}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: (index % 10) * 0.1 }}
                             className="cursor-target group relative aspect-[3/4] bg-surface overflow-hidden"
                         >
-                            {/* Member image */}
+                            {/* Member image-placeholder */}
                             <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-white/[0.02]" />
 
                             {/* Number */}
@@ -80,9 +77,6 @@ export default function TeamSection() {
 
                             {/* Content overlay */}
                             <div className="absolute bottom-0 left-0 right-0 p-6 z-10 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
-                                <p className="text-white/40 text-[10px] tracking-[0.3em] uppercase mb-1">
-                                    {member.category}
-                                </p>
                                 <h3 className="text-white text-lg font-display font-bold leading-tight">
                                     {member.name}
                                 </h3>
@@ -91,9 +85,6 @@ export default function TeamSection() {
 
                             {/* Hover reveal */}
                             <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center p-6 z-20">
-                                <p className="text-white/40 text-[10px] tracking-[0.3em] uppercase mb-3">
-                                    {member.category}
-                                </p>
                                 <h3 className="text-white text-xl font-display font-bold mb-2">
                                     {member.name}
                                 </h3>
@@ -104,7 +95,7 @@ export default function TeamSection() {
                             </div>
                         </motion.div>
                     ))}
-                </motion.div>
+                </div>
             </div>
         </section>
     );

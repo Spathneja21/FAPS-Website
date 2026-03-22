@@ -51,7 +51,7 @@ select {
   color: #F5F5F5;
 }
 
-/* Minimal scrollbar — VerticalDock progress replaces it */
+/* Minimal scrollbar */
 ::-webkit-scrollbar {
   width: 2px;
 }

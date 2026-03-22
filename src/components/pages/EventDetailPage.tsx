@@ -1,6 +1,7 @@
 'use client';
 
 import { useParams, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 import { allEvents } from '../sections/events/index';
 import Navbar from '../layout/Navbar';
 import TargetCursor from '../reactbits/TargetCursor';
@@ -8,6 +9,11 @@ import TargetCursor from '../reactbits/TargetCursor';
 export default function EventDetailPage() {
     const { eventId } = useParams();
     const navigate = useNavigate();
+
+    // Scroll to top on mount or when eventId changes
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [eventId]);
 
     // Find the event module by metadata ID
     const eventModule = allEvents.find(e => e.metadata.id === eventId);

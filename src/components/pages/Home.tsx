@@ -8,7 +8,6 @@ import EventsSection from '../sections/EventsSection';
 import GallerySection from '../sections/GallerySection';
 import ContactSection from '../sections/ContactSection';
 import LoadingScreen from '../ui/LoadingScreen';
-import VerticalDock from '../reactbits/VerticalDock';
 import TargetCursor from '../reactbits/TargetCursor';
 
 export default function Home() {
@@ -32,8 +31,7 @@ export default function Home() {
     <div style={{ background: '#131313', minHeight: '100vh' }}>
       <LoadingScreen />
       <TargetCursor />
-      <VerticalDock />
-      <Navbar />
+<Navbar />
       <main>
         <HeroSection />
         <EventsSection />

@@ -88,13 +88,18 @@ export default function HeroSection() {
             className="relative flex min-h-screen flex-col justify-between overflow-hidden"
             style={{ background: '#131313' }}
         >
+            {/* Background Image — covers only the title/hero viewport (z-0) */}
+            <div className="absolute top-0 left-0 right-0 z-0 w-full h-screen overflow-hidden">
+                <img 
+                    src="/Landing.png" 
+                    alt="Landing Background"
+                    className="w-full h-full object-cover opacity-100 bg-color-yellow pointer-events-none select-none"
+                />
+                {/* <div className="absolute inset-0 bg-gradient-to-b from-[#131313]/60 via-transparent to-[#131313]" /> */}
+            </div>
+
             {/* Optimized Grain overlay — simplified SVG */}
-            <div
-                className="absolute inset-0 opacity-[0.03] pointer-events-none z-0"
-            // style={{
-            //     backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
-            // }}
-            />
+            <div className="absolute inset-0 opacity-[0.03] pointer-events-none z-1" />
 
             {/* ─── Title (fades on scroll) ─── */}
             <motion.div

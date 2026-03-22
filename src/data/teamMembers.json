@@ -1,9 +1,8 @@
 [
     {
         "id": "tm-001",
-        "name": "Aanya Sharma",
-        "role": "President",
-        "category": "Core Council",
+        "name": "Aditi Pattnaik",
+        "role": "General Secretary",
         "bio": "A visionary leader blending traditional art with modern aesthetics. Passionate about building creative communities.",
         "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=face",
         "socialLinks": {
@@ -13,9 +12,8 @@
     },
     {
         "id": "tm-002",
-        "name": "Rohan Mehta",
-        "role": "Vice President",
-        "category": "Core Council",
+        "name": "Sahil Mulla",
+        "role": "General Secretary",
         "bio": "Photographer and storyteller. Believes every frame holds a universe waiting to be discovered.",
         "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
         "socialLinks": {
@@ -25,9 +23,8 @@
     },
     {
         "id": "tm-003",
-        "name": "Priya Kapoor",
-        "role": "Creative Director",
-        "category": "Core Council",
+        "name": "Dhruv Prakash",
+        "role": "Joint Secretary",
         "bio": "Digital artist and UI designer. Turns pixels into poetry and interfaces into experiences.",
         "photo": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
         "socialLinks": {
@@ -37,9 +34,8 @@
     },
     {
         "id": "tm-004",
-        "name": "Arjun Verma",
-        "role": "Photography Lead",
-        "category": "Team Lead",
+        "name": "Aanya Agrawal",
+        "role": "Joint Secretary",
         "bio": "Street photographer with an eye for the extraordinary in the ordinary. Canon enthusiast.",
         "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
         "socialLinks": {
@@ -49,9 +45,8 @@
     },
     {
         "id": "tm-005",
-        "name": "Ishita Nair",
-        "role": "Events Coordinator",
-        "category": "Team Lead",
+        "name": "Pranav Singh",
+        "role": "Joint Secretary",
         "bio": "The one who makes things happen. From exhibitions to workshops — if it's an event, she's behind it.",
         "photo": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=face",
         "socialLinks": {
@@ -61,9 +56,8 @@
     },
     {
         "id": "tm-006",
-        "name": "Kabir Singh",
-        "role": "Design Lead",
-        "category": "Team Lead",
+        "name": "Shabd Sharma",
+        "role": "Editor-in-Chief",
         "bio": "Graphic designer and typography nerd. Obsessed with visual systems and brand consistency.",
         "photo": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
         "socialLinks": {
@@ -73,9 +67,8 @@
     },
     {
         "id": "tm-007",
-        "name": "Diya Patel",
-        "role": "Social Media Manager",
-        "category": "Team Lead",
+        "name": "Tara Verma",
+        "role": "Editor-in-Chief",
         "bio": "Content creator and social strategist. Amplifies the society's voice across platforms.",
         "photo": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&h=400&fit=crop&crop=face",
         "socialLinks": {
@@ -85,9 +78,8 @@
     },
     {
         "id": "tm-008",
-        "name": "Vikram Rao",
-        "role": "Technical Lead",
-        "category": "Team Lead",
+        "name": "Eva Singh",
+        "role": "Editor-in-Chief",
         "bio": "Web developer and creative coder. Bridges the gap between art and technology.",
         "photo": "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=400&fit=crop&crop=face",
         "socialLinks": {
@@ -97,9 +89,8 @@
     },
     {
         "id": "tm-009",
-        "name": "Prof. Meera Joshi",
-        "role": "Faculty Advisor",
-        "category": "Faculty Advisor",
+        "name": "Shubham",
+        "role": "Head of Designing",
         "bio": "Professor of Fine Arts with 15+ years of experience. Guides the society's artistic direction.",
         "photo": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face",
         "socialLinks": {
@@ -109,9 +100,140 @@
     },
     {
         "id": "tm-010",
-        "name": "Ananya Gupta",
-        "role": "Member",
-        "category": "Member",
+        "name": "Akshat",
+        "role": "Head of Designing",
+        "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
+        "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
+        "socialLinks": {
+            "instagram": "https://instagram.com/ananyagupta",
+            "linkedin": "https://linkedin.com/in/ananyagupta"
+        }
+    },
+    {
+        "id": "tm-011",
+        "name": "Vaishnavi Singh",
+        "role": "Head of Painting",
+        "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
+        "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
+        "socialLinks": {
+            "instagram": "https://instagram.com/ananyagupta",
+            "linkedin": "https://linkedin.com/in/ananyagupta"
+        }
+    },
+    {
+        "id": "tm-012",
+        "name": "Simarpreet Kaur",
+        "role": "Head of Painting",
+        "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
+        "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
+        "socialLinks": {
+            "instagram": "https://instagram.com/ananyagupta",
+            "linkedin": "https://linkedin.com/in/ananyagupta"
+        }
+    },
+    {
+        "id": "tm-013",
+        "name": "Guranshdeep Singh",
+        "role": "Head of Painting",
+        "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
+        "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
+        "socialLinks": {
+            "instagram": "https://instagram.com/ananyagupta",
+            "linkedin": "https://linkedin.com/in/ananyagupta"
+        }
+    },
+    {
+        "id": "tm-014",
+        "name": "Gursimar Singh",
+        "role": "Head of Photography",
+        "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
+        "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
+        "socialLinks": {
+            "instagram": "https://instagram.com/ananyagupta",
+            "linkedin": "https://linkedin.com/in/ananyagupta"
+        }
+    },
+    {
+        "id": "tm-015",
+        "name": "Baldev",
+        "role": "Head of Photography",
+        "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
+        "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
+        "socialLinks": {
+            "instagram": "https://instagram.com/ananyagupta",
+            "linkedin": "https://linkedin.com/in/ananyagupta"
+        }
+    },
+    {
+        "id": "tm-016",
+        "name": "Gauri Gujral",
+        "role": "Head of Photography",
+        "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
+        "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
+        "socialLinks": {
+            "instagram": "https://instagram.com/ananyagupta",
+            "linkedin": "https://linkedin.com/in/ananyagupta"
+        }
+    },
+    {
+        "id": "tm-017",
+        "name": "Puneet",
+        "role": "Head of Marketing",
+        "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
+        "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
+        "socialLinks": {
+            "instagram": "https://instagram.com/ananyagupta",
+            "linkedin": "https://linkedin.com/in/ananyagupta"
+        }
+    },
+    {
+        "id": "tm-018",
+        "name": "Jeevesh",
+        "role": "Head of Sketching",
+        "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
+        "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
+        "socialLinks": {
+            "instagram": "https://instagram.com/ananyagupta",
+            "linkedin": "https://linkedin.com/in/ananyagupta"
+        }
+    },
+    {
+        "id": "tm-019",
+        "name": "Ayush",
+        "role": "Head of Sketching",
+        "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
+        "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
+        "socialLinks": {
+            "instagram": "https://instagram.com/ananyagupta",
+            "linkedin": "https://linkedin.com/in/ananyagupta"
+        }
+    },
+    {
+        "id": "tm-020",
+        "name": "Arpit",
+        "role": "Head of Sketching",
+        "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
+        "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
+        "socialLinks": {
+            "instagram": "https://instagram.com/ananyagupta",
+            "linkedin": "https://linkedin.com/in/ananyagupta"
+        }
+    },
+    {
+        "id": "tm-021",
+        "name": "Praniti Tandon",
+        "role": "Head of Cinematography",
+        "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
+        "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
+        "socialLinks": {
+            "instagram": "https://instagram.com/ananyagupta",
+            "linkedin": "https://linkedin.com/in/ananyagupta"
+        }
+    },
+    {
+        "id": "tm-022",
+        "name": "Devender Singh",
+        "role": "Head of Marketing",
         "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
         "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
         "socialLinks": {
