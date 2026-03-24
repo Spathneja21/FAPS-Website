@@ -5,21 +5,16 @@ import { useRef } from 'react';
 
 /* ─── Footer statement with mixed fonts ─── */
 const statementLine1 = [
-    { text: 'WHERE ', type: 'serif' as const },
-    { text: 'A', type: 'script' as const },
-    { text: 'RT', type: 'serif' as const },
+    { text: 'WHERE ART', type: 'serif' as const },
 ];
 
 const statementLine2 = [
-    { text: 'MEETS THE ', type: 'serif' as const },
-    { text: 'L', type: 'script' as const },
-    { text: 'ENS', type: 'serif' as const },
+    { text: 'MEETS THE LENS', type: 'serif' as const },
 ];
 
 const statementLine3 = [
-    { text: 'SIN', type: 'serif' as const },
-    { text: 'C', type: 'script' as const },
-    { text: 'E  2024', type: 'serif' as const },
+    { text: 'SINC', type: 'serif' as const },
+    { text: 'E 1970', type: 'serif' as const },
 ];
 
 const socialLinks = [

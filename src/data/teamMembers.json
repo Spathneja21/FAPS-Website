@@ -1,5 +1,41 @@
 [
     {
+        "id": "fa-001",
+        "name": "Dr. Ashima Singh",
+        "role": "Faculty Advisor",
+        "category": "Faculty Advisor",
+        "bio": "Professor of Fine Arts with 20+ years of experience. Dedicated to fostering creative excellence and providing guidance to the next generation of artists and photographers.",
+        "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
+        "socialLinks": {
+            "instagram": "https://instagram.com/",
+            "linkedin": "https://linkedin.com/"
+        }
+    },
+    {
+        "id": "fa-002",
+        "name": "Dr. Vikas Sharma",
+        "role": "Faculty Advisor",
+        "category": "Faculty Advisor",
+        "bio": "Passionate about the intersection of art and technology, guiding students to push their creative boundaries in photography and digital design.",
+        "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=face",
+        "socialLinks": {
+            "instagram": "https://instagram.com/",
+            "linkedin": "https://linkedin.com/"
+        }
+    },
+    {
+        "id": "fa-003",
+        "name": "Dr. Prableen Kaur",
+        "role": "Faculty Advisor",
+        "category": "Faculty Advisor",
+        "bio": "Passionate about the intersection of art and technology, guiding students to push their creative boundaries in photography and digital design.",
+        "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=face",
+        "socialLinks": {
+            "instagram": "https://instagram.com/",
+            "linkedin": "https://linkedin.com/"
+        }
+    },
+    {
         "id": "tm-001",
         "name": "Aditi Pattnaik",
         "role": "General Secretary",
@@ -12,7 +48,7 @@
     },
     {
         "id": "tm-002",
-        "name": "Sahil Mulla",
+        "name": "Sahil",
         "role": "General Secretary",
         "bio": "Photographer and storyteller. Believes every frame holds a universe waiting to be discovered.",
         "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
@@ -188,7 +224,7 @@
     },
     {
         "id": "tm-018",
-        "name": "Jeevesh",
+        "name": "Jeevesh Dass",
         "role": "Head of Sketching",
         "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
         "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
@@ -199,7 +235,7 @@
     },
     {
         "id": "tm-019",
-        "name": "Ayush",
+        "name": "Ayush Garg",
         "role": "Head of Sketching",
         "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
         "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
@@ -210,7 +246,7 @@
     },
     {
         "id": "tm-020",
-        "name": "Arpit",
+        "name": "Arpit Singh",
         "role": "Head of Sketching",
         "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
         "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
@@ -233,7 +269,7 @@
     {
         "id": "tm-022",
         "name": "Devender Singh",
-        "role": "Head of Marketing",
+        "role": "Head of Cinematography",
         "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
         "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
         "socialLinks": {

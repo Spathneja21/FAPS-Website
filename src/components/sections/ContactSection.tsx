@@ -10,7 +10,7 @@ const dockItems = [
     {
         icon: <Instagram size={24} color="#fff" />,
         label: 'Instagram',
-        href: 'https://instagram.com',
+        href: 'https://www.instagram.com/faps_tiet/',
     },
     {
         icon: <Linkedin size={24} color="#fff" />,
@@ -80,22 +80,6 @@ export default function ContactSection() {
                             Reach out anytime — whether you want to collaborate, join the society,
                             or just say hello. We&apos;d love to hear from you.
                         </p>
-
-                        <div className="space-y-4 md:space-y-6 mb-10 md:mb-12">
-                            <div>
-                                <p className="text-white/20 text-[8px] md:text-[10px] tracking-[0.3em] uppercase mb-1">Email</p>
-                                <a
-                                    href="mailto:faps@college.edu"
-                                    className="cursor-target text-white/50 hover:text-white transition-colors text-xs md:text-sm underline underline-offset-4"
-                                >
-                                    faps@college.edu
-                                </a>
-                            </div>
-                            <div>
-                                <p className="text-white/20 text-[8px] md:text-[10px] tracking-[0.3em] uppercase mb-1">Location</p>
-                                <p className="text-white/40 text-xs md:text-sm">Student Activity Center, Room 204</p>
-                            </div>
-                        </div>
 
                         {/* Dock for social links */}
                         <div className="flex justify-start -ml-2">

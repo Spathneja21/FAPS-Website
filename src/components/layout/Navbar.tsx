@@ -74,11 +74,11 @@ export default function Navbar() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
             <div
-                className={`max-w-none w-full mx-auto px-6 py-3 md:px-10 flex items-center justify-between transition-all duration-500 pointer-events-auto rounded-full ${scrolled ? 'bg-[#131313]/80 backdrop-blur-xl border border-white/5 shadow-2xl' : ''}`}
+                className={`max-w-none w-full mx-auto px-6 py-3 md:px-10 flex items-center justify-between transition-all duration-500 pointer-events-auto rounded-full ${scrolled && !menuOpen ? 'bg-[#131313]/80 backdrop-blur-xl border border-white/5 shadow-2xl' : ''}`}
             >
                 {/* Left side - Label (Hidden on mobile) */}
                 <div className="flex-1 hidden md:flex items-center">
-                    <span className="letter-spaced text-[9px]" style={{ color: '#000000', opacity: 1 }}>
+                    <span className="letter-spaced text-[9px]" style={{ color: '#F5E6D3', opacity: 1 }}>
                         Nexus of Creators
                     </span>
                 </div>
@@ -110,18 +110,18 @@ export default function Navbar() {
                         onClick={toggleMenu}
                         className="cursor-target relative z-[110] group flex items-center gap-4"
                     >
-                        <span className="hidden md:block letter-spaced text-[10px] group-hover:text-white transition-colors" style={{ color: '#000000', opacity: 1 }}>
+                        <span className="hidden md:block letter-spaced text-[10px] group-hover:text-white transition-colors" style={{ color: '#F5E6D3', opacity: 1 }}>
                             {menuOpen ? 'CLOSE' : 'MENU'}
                         </span>
                         <div className="flex flex-col gap-1 items-end">
                             <motion.span
                                 className="block h-[1px]"
-                                style={{ background: '#000000' }}
+                                style={{ background: '#F5E6D3' }}
                                 animate={{ width: menuOpen ? 20 : 16, rotate: menuOpen ? 45 : 0, y: menuOpen ? 4 : 0 }}
                             />
                             <motion.span
                                 className="block h-[1px]"
-                                style={{ background: '#000000' }}
+                                style={{ background: '#F5E6D3' }}
                                 animate={{ width: menuOpen ? 20 : 24, rotate: menuOpen ? -45 : 0, y: menuOpen ? -4 : 0 }}
                             />
                         </div>

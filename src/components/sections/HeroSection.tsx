@@ -88,19 +88,6 @@ export default function HeroSection() {
             className="relative flex min-h-screen flex-col justify-between overflow-hidden"
             style={{ background: '#131313' }}
         >
-            {/* Background Image — covers only the title/hero viewport (z-0) */}
-            <div className="absolute top-0 left-0 right-0 z-0 w-full h-screen overflow-hidden">
-                <img 
-                    src="/Landing.png" 
-                    alt="Landing Background"
-                    className="w-full h-full object-cover opacity-100 bg-color-yellow pointer-events-none select-none"
-                />
-                {/* <div className="absolute inset-0 bg-gradient-to-b from-[#131313]/60 via-transparent to-[#131313]" /> */}
-            </div>
-
-            {/* Optimized Grain overlay — simplified SVG */}
-            <div className="absolute inset-0 opacity-[0.03] pointer-events-none z-1" />
-
             {/* ─── Title (fades on scroll) ─── */}
             <motion.div
                 className="relative z-10 flex items-center justify-center w-full px-6 md:px-12 py-24 md:py-32"
@@ -146,10 +133,10 @@ export default function HeroSection() {
                     <motion.div
                         className="flex flex-col gap-5"
                         variants={fadeIn}
-                        custom={3.2}
+                        custom={1}
                         initial="hidden"
                         whileInView="visible"
-                        viewport={{ once: true, amount: 0.2 }}
+                        viewport={{ once: true, amount: 0.1 }}
                     >
                         <div className="flex items-center gap-4">
                             <span className="w-12 h-px" style={{ background: '#C45200' }} />
@@ -170,10 +157,10 @@ export default function HeroSection() {
                         <motion.div
                             className="flex flex-col gap-5"
                             variants={fadeIn}
-                            custom={3.4}
+                            custom={0.3}
                             initial="hidden"
                             whileInView="visible"
-                            viewport={{ once: true, amount: 0.2 }}
+                            viewport={{ once: true, amount: 0.1 }}
                         >
                             <div className="flex items-center gap-4">
                                 <span className="w-12 h-px" style={{ background: '#C45200' }} />
@@ -191,10 +178,10 @@ export default function HeroSection() {
                         <motion.div
                             className="flex flex-col gap-5"
                             variants={fadeIn}
-                            custom={3.6}
+                            custom={0.4}
                             initial="hidden"
                             whileInView="visible"
-                            viewport={{ once: true, amount: 0.2 }}
+                            viewport={{ once: true, amount: 0.1 }}
                         >
                             <div className="flex items-center gap-4">
                                 <span className="w-12 h-px" style={{ background: '#C45200' }} />

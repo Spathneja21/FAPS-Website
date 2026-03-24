@@ -57,7 +57,7 @@ export default function GallerySection() {
         <section id="gallery" className="relative py-32 px-6 bg-[#131313]" ref={containerRef}>
             <div className="max-w-7xl mx-auto">
                 {/* Section heading */}
-                <div className="mb-10 md:mb-12 border-b border-white/10 pb-6 md:pb-8">
+                <div className="mb-10 md:mb-12 border-b border-white/10 pb-6 md:pb-8 flex flex-col items-center text-center">
                     <motion.p
                         className="text-white/30 text-[10px] md:text-xs tracking-[0.4em] uppercase mb-3 md:mb-4"
                         initial={{ opacity: 0 }}
@@ -66,7 +66,7 @@ export default function GallerySection() {
                     >
                         Selected Work
                     </motion.p>
-                    <div className="flex items-end justify-between">
+                    <div className="flex items-center justify-center gap-3">
                         <h2 className="text-4xl md:text-7xl font-display font-black text-white leading-none">
                             <VariableProximity
                                 label="Gallery"
@@ -79,9 +79,6 @@ export default function GallerySection() {
                                 style={{ fontFamily: "'Manrope', sans-serif" }}
                             />
                         </h2>
-                        <span className="text-white/20 text-xs md:text-sm font-mono hidden sm:block">
-                            ({filteredItems.length})
-                        </span>
                     </div>
                 </div>
 
