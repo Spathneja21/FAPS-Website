@@ -2,7 +2,7 @@
     {
         "id": "fa-001",
         "name": "Dr. Ashima Singh",
-        "role": "Faculty Advisor",
+        "role": "President",
         "category": "Faculty Advisor",
         "bio": "Professor of Fine Arts with 20+ years of experience. Dedicated to fostering creative excellence and providing guidance to the next generation of artists and photographers.",
         "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
@@ -14,7 +14,7 @@
     {
         "id": "fa-002",
         "name": "Dr. Vikas Sharma",
-        "role": "Faculty Advisor",
+        "role": "Vice President",
         "category": "Faculty Advisor",
         "bio": "Passionate about the intersection of art and technology, guiding students to push their creative boundaries in photography and digital design.",
         "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=face",
@@ -26,7 +26,7 @@
     {
         "id": "fa-003",
         "name": "Dr. Prableen Kaur",
-        "role": "Faculty Advisor",
+        "role": "Vice President",
         "category": "Faculty Advisor",
         "bio": "Passionate about the intersection of art and technology, guiding students to push their creative boundaries in photography and digital design.",
         "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=face",

@@ -31,6 +31,8 @@ const cardVariants = {
     },
 };
 
+
+
 export default function GallerySection() {
     const [activeCategory, setActiveCategory] = useState('All');
     const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
@@ -105,7 +107,7 @@ export default function GallerySection() {
 
                 {/* Gallery grid */}
                 <motion.div
-                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1"
+                    className="columns-2 md:columns-3 lg:columns-4 gap-1 sm:gap-4 w-full"
                     variants={containerVariants}
                     initial="hidden"
                     whileInView="visible"
@@ -116,15 +118,14 @@ export default function GallerySection() {
                         <motion.div
                             key={`${item.title}-${index}`}
                             variants={cardVariants}
-                            className="cursor-target group relative aspect-[4/3] overflow-hidden bg-surface"
+                            className="cursor-target group relative overflow-hidden bg-surface mb-1 sm:mb-4 break-inside-avoid w-full"
                             onClick={() => openLightbox(index)}
                         >
                             <Image
                                 src={item.imageUrl}
                                 alt={item.title}
-                                fill
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
                             />
                             {/* Overlay on hover — different behavior on mobile might be needed, but for now just scaling text */}
                             <div className="absolute inset-0 bg-black/20 md:bg-black/0 group-hover:bg-black/60 transition-all duration-500 flex flex-col justify-end p-4 md:p-6">

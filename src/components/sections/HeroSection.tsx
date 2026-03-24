@@ -88,6 +88,16 @@ export default function HeroSection() {
             className="relative flex min-h-screen flex-col justify-between overflow-hidden"
             style={{ background: '#131313' }}
         >
+            {/* Background Image */}
+            <div className="absolute top-0 left-0 right-0 z-0 w-full h-screen overflow-hidden pointer-events-none select-none">
+                <img 
+                    src="/download.jpg" 
+                    alt="Hero Background"
+                    className="w-full h-full object-cover opacity-100"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-[#131313]/40 via-transparent to-[#131313]" />
+            </div>
+
             {/* ─── Title (fades on scroll) ─── */}
             <motion.div
                 className="relative z-10 flex items-center justify-center w-full px-6 md:px-12 py-24 md:py-32"
@@ -97,7 +107,7 @@ export default function HeroSection() {
                     <h1 className="font-manrope font-semibold tracking-tight leading-[0.55] text-white"
                         style={{ fontSize: 'clamp(2rem, 10vw, 6rem)' }}>
                         {/* Line 1: FINE ARTS AND */}
-                        <RevealLine delay={2.4} style={{ y: yText1 }} className="whitespace-nowrap">
+                        <RevealLine delay={0.8} style={{ y: yText1 }} className="whitespace-nowrap">
                             <span className="block text-white animate-blurIn">
                                 FINE <span
                                     className="inline-block drop-shadow-xl font-luxurious font-light align-baseline mr-1 md:mr-4"
@@ -107,7 +117,7 @@ export default function HeroSection() {
                         </RevealLine>
 
                         {/* Line 2: PHOTOGRAPHY */}
-                        <RevealLine delay={2.6} style={{ y: yText2 }} className="whitespace-nowrap -mt-2 md:-mt-8">
+                        <RevealLine delay={1} style={{ y: yText2 }} className="whitespace-nowrap -mt-2 md:-mt-8">
                             <span className="block">
                                 <span className="inline-block text-white drop-shadow-xl font-luxurious font-light align-baseline"
                                     style={{ lineHeight: 1, fontSize: 'clamp(3rem, 16vw, 10rem)' }}>P</span> HOTOGRAPHY
@@ -115,7 +125,7 @@ export default function HeroSection() {
                         </RevealLine>
 
                         {/* Line 3: SOCIETY */}
-                        <RevealLine delay={2.8} style={{ y: yText3 }} className="whitespace-nowrap -mt-2 md:-mt-6">
+                        <RevealLine delay={1.2} style={{ y: yText3 }} className="whitespace-nowrap -mt-2 md:-mt-6">
                             <span className="block">
                                 SOCIET<span className="inline-block text-white drop-shadow-xl font-luxurious font-light align-middle"
                                     style={{ lineHeight: 1, fontSize: 'clamp(3rem, 16vw, 10rem)' }}>Y</span>

@@ -13,16 +13,6 @@ const dockItems = [
         href: 'https://www.instagram.com/faps_tiet/',
     },
     {
-        icon: <Linkedin size={24} color="#fff" />,
-        label: 'LinkedIn',
-        href: 'https://linkedin.com',
-    },
-    {
-        icon: <Youtube size={24} color="#fff" />,
-        label: 'YouTube',
-        href: 'https://youtube.com',
-    },
-    {
         icon: <Mail size={24} color="#fff" />,
         label: 'Email',
         href: 'mailto:faps@college.edu',
