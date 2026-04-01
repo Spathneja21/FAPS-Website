@@ -67,8 +67,9 @@ export default function TeamSection() {
                                 transition={{ duration: 0.5, delay: (index % 10) * 0.1 }}
                                 className="cursor-target group relative aspect-[3/4] bg-surface overflow-hidden mx-auto w-full max-w-sm"
                             >
-                                {/* Member image-placeholder */}
-                                <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-white/[0.02]" />
+                                {/* Member image */}
+                                <img src={member.photo} alt={member.name} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                                <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-white/[0.02] pointer-events-none" />
 
                                 {/* Content overlay */}
                                 <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 z-10 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
@@ -106,8 +107,9 @@ export default function TeamSection() {
                                 transition={{ duration: 0.5, delay: (index % 10) * 0.1 }}
                                 className="cursor-target group relative aspect-[3/4] bg-surface overflow-hidden"
                             >
-                                {/* Member image-placeholder */}
-                                <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-white/[0.02]" />
+                                {/* Member image */}
+                                <img src={member.photo} alt={member.name} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                                <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-white/[0.02] pointer-events-none" />
 
                                 {/* Number (only for regular team elements, optionally) */}
                                 <div className="absolute top-4 left-4 z-10">
