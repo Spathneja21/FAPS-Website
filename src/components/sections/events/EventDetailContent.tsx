@@ -14,6 +14,7 @@ interface EventDetailContentProps {
         image?: string;
         status: string;
         registrationLink?: string;
+        galleryImages?: string[];
     };
     onBack: () => void;
 }
@@ -108,7 +109,7 @@ export default function EventDetailContent({ event, onBack }: EventDetailContent
                             Experience
                         </h2>
                     </div>
-                    <p className="text-base md:text-xl font-light leading-relaxed mb-10" style={{ color: 'rgba(245,230,211,0.7)' }}>
+                    <p className="text-base md:text-xl font-light leading-relaxed mb-10 whitespace-pre-wrap" style={{ color: 'rgba(245,230,211,0.7)' }}>
                         {event.description}
                     </p>
 
@@ -153,6 +154,41 @@ export default function EventDetailContent({ event, onBack }: EventDetailContent
                     </div>
                 </motion.div>
             </div>
+
+            {/* Event Gallery */}
+            {event.galleryImages && event.galleryImages.length > 0 && (
+                <motion.div
+                    className="mt-24"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.6, duration: 0.7 }}
+                >
+                    <div className="flex items-center gap-3 mb-10">
+                        <span className="w-10 h-px" style={{ background: '#C45200' }} />
+                        <h2 className="text-xl md:text-3xl font-display font-black" style={{ color: '#F5E6D3' }}>
+                            Gallery
+                        </h2>
+                    </div>
+                    <div className="columns-1 sm:columns-2 md:columns-3 gap-6 space-y-6">
+                        {event.galleryImages.map((img, idx) => (
+                            <motion.div
+                                key={idx}
+                                className="relative overflow-hidden rounded-sm border border-[#3A1800] break-inside-avoid"
+                                style={{ background: '#2E1200' }}
+                                whileHover={{ scale: 1.02 }}
+                                transition={{ duration: 0.3 }}
+                            >
+                                <img
+                                    src={img}
+                                    alt={`Gallery image ${idx + 1}`}
+                                    className="w-full h-auto block transition-all duration-500"
+                                    loading="lazy"
+                                />
+                            </motion.div>
+                        ))}
+                    </div>
+                </motion.div>
+            )}
         </div>
     );
 }

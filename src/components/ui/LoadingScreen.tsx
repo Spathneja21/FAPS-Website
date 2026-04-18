@@ -1,222 +1,347 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useMotionValue, useTransform, animate } from 'framer-motion';
 
-/* ─── Easing curves ─── */
-const easeOutExpo = [0.16, 1, 0.3, 1] as const;
-const easeInOutQuart = [0.76, 0, 0.24, 1] as const;
+/* ─── Design System Tokens ─── */
+const CREAM_BG = '#F3ECE7';
+const DARK_BROWN = '#38312E';
+const TAGLINE_COLOR = '#39322F';
+
+/* ─── Easing curves from design-system.json ─── */
+const CINEMATIC: [number, number, number, number] = [0.76, 0, 0.24, 1];
+const REVEAL: [number, number, number, number] = [0.33, 1, 0.68, 1];
+
+/* ─── Timing (ms) — absolute from mount ─── */
+const SPLIT_DELAY = 300;
+const IMAGE_DELAY = 400;
+const COUNTER_START = 500;
+const COUNTER_DURATION = 1000;
+const BRACKET_TIME = 1500;
+const EXIT_TIME = 2500;
+const DONE_TIME = 3500;
 
 export default function LoadingScreen() {
-    const [phase, setPhase] = useState<'loading' | 'reveal' | 'done'>(() => {
+    /* Skip entirely if already shown this session */
+    const [shouldRender] = useState(() => {
         if (typeof window !== 'undefined' && sessionStorage.getItem('faps-loader-shown')) {
-            return 'done';
+            return false;
         }
-        return 'loading';
+        return true;
     });
-    const progress = useMotionValue(0);
-    const progressPercent = useTransform(progress, [0, 1], [0, 100]);
+
+    const [showBrackets, setShowBrackets] = useState(false);
+    const [isExiting, setIsExiting] = useState(false);
+    const [isDone, setIsDone] = useState(false);
     const [displayCount, setDisplayCount] = useState(0);
 
-    // Animate progress 0 → 1
+    const progress = useMotionValue(0);
+    const progressDisplay = useTransform(progress, [0, 1], [0, 100]);
+
+    /* ─── All timers fire once on mount at absolute offsets ─── */
     useEffect(() => {
-        if (phase === 'done') return;
+        if (!shouldRender) return;
 
-        const controls = animate(progress, 1, {
-            duration: 2.0,
-            ease: [0.25, 0.1, 0.25, 1],
-        });
+        // Start counter at COUNTER_START ms
+        const counterTimer = setTimeout(() => {
+            const controls = animate(progress, 1, {
+                duration: COUNTER_DURATION / 1000,
+                ease: 'linear',
+            });
+            return () => controls.stop();
+        }, COUNTER_START);
 
-        const unsubscribe = progressPercent.on('change', (v) => {
-            setDisplayCount(Math.round(v));
-        });
+        // Show brackets
+        const bracketTimer = setTimeout(() => setShowBrackets(true), BRACKET_TIME);
 
-        return () => {
-            controls.stop();
-            unsubscribe();
-        };
-    }, [progress, progressPercent, phase]);
+        // Begin exit fade
+        const exitTimer = setTimeout(() => setIsExiting(true), EXIT_TIME);
 
-    // Phase transitions
-    useEffect(() => {
-        if (phase === 'done') return;
-
-        const revealTimer = setTimeout(() => setPhase('reveal'), 2400);
+        // Remove from DOM
         const doneTimer = setTimeout(() => {
-            setPhase('done');
+            setIsDone(true);
             sessionStorage.setItem('faps-loader-shown', 'true');
-        }, 3400);
+        }, DONE_TIME);
+
         return () => {
-            clearTimeout(revealTimer);
+            clearTimeout(counterTimer);
+            clearTimeout(bracketTimer);
+            clearTimeout(exitTimer);
             clearTimeout(doneTimer);
         };
-    }, [phase]);
+    }, [shouldRender, progress]);
 
-    const progressWidth = useTransform(progress, [0, 1], ['0%', '100%']);
+    /* Subscribe to counter display updates */
+    useEffect(() => {
+        if (!shouldRender) return;
+        const unsub = progressDisplay.on('change', (v) => {
+            setDisplayCount(Math.round(v));
+        });
+        return unsub;
+    }, [shouldRender, progressDisplay]);
 
-    if (phase === 'done') return null;
+    if (!shouldRender || isDone) return null;
+
+    const counterStr = String(displayCount).padStart(3, '0');
+    const bracketLen = 'clamp(60px, 6vw, 100px)';
 
     return (
-        <AnimatePresence mode="wait">
-            <>
-                {/* ─── Top curtain ─── */}
-                <motion.div
-                    className="fixed inset-0 z-[9999]"
-                    style={{ background: '#0a0a0a' }}
-                    initial={false}
-                    animate={phase === 'reveal' ? { y: '-100%' } : { y: '0%' }}
-                    transition={
-                        phase === 'reveal'
-                            ? { duration: 0.9, ease: easeInOutQuart, delay: 0.1 }
-                            : undefined
-                    }
+        <AnimatePresence>
+            <motion.div
+                key="preloader"
+                style={{
+                    position: 'fixed',
+                    inset: 0,
+                    zIndex: 9999,
+                    background: CREAM_BG,
+                    overflow: 'hidden',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    borderRadius: 0,
+                    userSelect: 'none',
+                    cursor: 'default',
+                }}
+                animate={
+                    isExiting
+                        ? { opacity: 0, scale: 1.02 }
+                        : { opacity: 1, scale: 1 }
+                }
+                transition={
+                    isExiting
+                        ? { duration: 0.8, ease: CINEMATIC }
+                        : undefined
+                }
+            >
+                {/* ─── Logo — top center, static ─── */}
+                <div
+                    style={{
+                        position: 'absolute',
+                        top: 'clamp(24px, 3vh, 40px)',
+                        left: '50%',
+                        transform: 'translateX(-50%)',
+                    }}
                 >
-                    <div className="w-full h-full flex flex-col items-center justify-center relative overflow-hidden">
+                    <img
+                        src="/faps-logo.png"
+                        alt="FAPS"
+                        style={{
+                            width: 'clamp(32px, 4vw, 56px)',
+                            height: 'auto',
+                            objectFit: 'contain',
+                            display: 'block',
+                        }}
+                    />
+                </div>
 
-                        {/* Ambient glow behind logo */}
-                        <motion.div
-                            className="absolute w-[200px] h-[200px] rounded-full"
-                            style={{
-                                background: 'radial-gradient(circle, rgba(245,245,245,0.06) 0%, transparent 70%)',
-                            }}
-                            initial={{ scale: 0, opacity: 0 }}
-                            animate={{ scale: [0, 2.5, 2], opacity: [0, 0.8, 0.4] }}
-                            transition={{ duration: 2, ease: 'easeOut', delay: 0.2 }}
-                        />
+                {/* ─── Center content: brand split + image + counters ─── */}
+                <div
+                    style={{
+                        position: 'relative',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        width: '100vw',
+                        height: '100vh',
+                    }}
+                >
+                    {/* Left half of brand name: "FA" */}
+                    <motion.span
+                        style={{
+                            position: 'absolute',
+                            color: DARK_BROWN,
+                            fontSize: '15vw',
+                            fontWeight: 800,
+                            fontFamily: "'Inter', 'Aktiv Grotesk', system-ui, sans-serif",
+                            textTransform: 'uppercase' as const,
+                            letterSpacing: '-0.01em',
+                            lineHeight: 1,
+                            zIndex: 2,
+                            right: '50%',
+                            whiteSpace: 'nowrap',
+                        }}
+                        initial={{ x: 0 }}
+                        animate={{ x: '-42vw' }}
+                        transition={{
+                            duration: 1.2,
+                            ease: CINEMATIC,
+                            delay: SPLIT_DELAY / 1000,
+                        }}
+                    >
+                        FA
+                    </motion.span>
 
-                        {/* Logo */}
-                        <motion.div
-                            className="relative z-10"
-                            initial={{ scale: 0.5, opacity: 0, filter: 'blur(20px)' }}
-                            animate={{ scale: 1, opacity: 1, filter: 'blur(0px)' }}
-                            transition={{ duration: 1, ease: easeOutExpo, delay: 0.1 }}
-                        >
-                            <motion.img
-                                src="/faps-logo.png"
-                                alt="FAPS"
-                                className="w-16 h-16 md:w-20 md:h-20 object-contain"
-                                style={{ filter: 'invert(1) brightness(2)' }}
-                                animate={{
-                                    scale: [1, 1.05, 1],
-                                }}
-                                transition={{
-                                    duration: 2,
-                                    ease: 'easeInOut',
-                                    repeat: Infinity,
-                                    repeatType: 'reverse',
-                                }}
-                            />
-                        </motion.div>
+                    {/* Right half of brand name: "PS" */}
+                    <motion.span
+                        style={{
+                            position: 'absolute',
+                            color: DARK_BROWN,
+                            fontSize: '15vw',
+                            fontWeight: 800,
+                            fontFamily: "'Inter', 'Aktiv Grotesk', system-ui, sans-serif",
+                            textTransform: 'uppercase' as const,
+                            letterSpacing: '-0.01em',
+                            lineHeight: 1,
+                            zIndex: 2,
+                            left: '50%',
+                            whiteSpace: 'nowrap',
+                        }}
+                        initial={{ x: 0 }}
+                        animate={{ x: '42vw' }}
+                        transition={{
+                            duration: 1.2,
+                            ease: CINEMATIC,
+                            delay: SPLIT_DELAY / 1000,
+                        }}
+                    >
+                        PS
+                    </motion.span>
 
-                        {/* Society name — staggered letter reveal */}
-                        <motion.div
-                            className="mt-8 flex items-baseline gap-[2px] overflow-hidden"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 0.6, duration: 0.3 }}
-                        >
-                            {'FINE ARTS & PHOTOGRAPHY SOCIETY'.split('').map((char, i) => (
-                                <motion.span
-                                    key={i}
-                                    className="text-[#F5F5F5]/70 text-[0.55rem] md:text-[0.65rem] tracking-[0.4em] font-light"
-                                    initial={{ y: 20, opacity: 0 }}
-                                    animate={{ y: 0, opacity: 1 }}
-                                    transition={{
-                                        delay: 0.7 + i * 0.02,
-                                        duration: 0.4,
-                                        ease: easeOutExpo,
-                                    }}
-                                >
-                                    {char === ' ' ? '\u00A0' : char}
-                                </motion.span>
-                            ))}
-                        </motion.div>
+                    {/* Product image — center, scales up */}
+                    <motion.img
+                        src="/preloader-hero.jpg"
+                        alt="FAPS"
+                        style={{
+                            position: 'absolute',
+                            width: 'clamp(240px, 30vw, 420px)',
+                            aspectRatio: '4/3',
+                            objectFit: 'cover',
+                            zIndex: 1,
+                            borderRadius: 0,
+                        }}
+                        initial={{ scale: 0.6, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{
+                            duration: 1.4,
+                            ease: REVEAL,
+                            delay: IMAGE_DELAY / 1000,
+                        }}
+                    />
 
-                        {/* ─── Bottom section: progress ─── */}
-                        <div className="absolute bottom-12 left-0 right-0 px-12 md:px-24">
-                            {/* Progress line — full width */}
-                            <div className="w-full h-px bg-[#F5F5F5]/[0.06] relative overflow-hidden">
-                                <motion.div
-                                    className="absolute inset-y-0 left-0 bg-[#F5F5F5]/30"
-                                    style={{ width: progressWidth }}
-                                />
-                                {/* Glowing head of progress line */}
-                                <motion.div
-                                    className="absolute inset-y-0 w-8"
-                                    style={{
-                                        left: progressWidth,
-                                        background: 'linear-gradient(90deg, rgba(245,245,245,0.4), transparent)',
-                                        filter: 'blur(4px)',
-                                    }}
-                                />
-                            </div>
+                    {/* Left counter */}
+                    <motion.span
+                        style={{
+                            position: 'absolute',
+                            left: 'calc(50% - clamp(240px, 30vw, 420px) / 2 - clamp(40px, 4vw, 64px))',
+                            color: DARK_BROWN,
+                            fontSize: 'clamp(10px, 0.65vw, 12px)',
+                            fontWeight: 300,
+                            fontFamily: "'Inter', system-ui, sans-serif",
+                            letterSpacing: '0.02em',
+                            zIndex: 3,
+                        }}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: COUNTER_START / 1000, duration: 0.3 }}
+                    >
+                        {counterStr}
+                    </motion.span>
 
-                            {/* Counter row */}
-                            <div className="flex items-center justify-between mt-4">
-                                <motion.span
-                                    className="text-[#F5F5F5]/20 text-[0.6rem] tracking-[0.3em] font-light"
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    transition={{ delay: 0.5, duration: 0.4 }}
-                                >
-                                    LOADING
-                                </motion.span>
-                                <motion.span
-                                    className="text-[#F5F5F5]/40 text-xs tracking-[0.5em] font-light tabular-nums"
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    transition={{ delay: 0.5, duration: 0.4 }}
-                                >
-                                    {String(displayCount).padStart(3, '0')}
-                                </motion.span>
-                            </div>
-                        </div>
+                    {/* Right counter */}
+                    <motion.span
+                        style={{
+                            position: 'absolute',
+                            right: 'calc(50% - clamp(240px, 30vw, 420px) / 2 - clamp(40px, 4vw, 64px))',
+                            color: DARK_BROWN,
+                            fontSize: 'clamp(10px, 0.65vw, 12px)',
+                            fontWeight: 300,
+                            fontFamily: "'Inter', system-ui, sans-serif",
+                            letterSpacing: '0.02em',
+                            zIndex: 3,
+                        }}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: COUNTER_START / 1000, duration: 0.3 }}
+                    >
+                        {counterStr}
+                    </motion.span>
 
-                        {/* Corner accents */}
-                        <motion.div
-                            className="absolute top-8 left-8 w-6 h-6 border-l border-t border-[#F5F5F5]/[0.08]"
-                            initial={{ opacity: 0, scale: 0.5 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: 0.4, duration: 0.6, ease: easeOutExpo }}
-                        />
-                        <motion.div
-                            className="absolute top-8 right-8 w-6 h-6 border-r border-t border-[#F5F5F5]/[0.08]"
-                            initial={{ opacity: 0, scale: 0.5 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: 0.5, duration: 0.6, ease: easeOutExpo }}
-                        />
-                        <motion.div
-                            className="absolute bottom-8 left-8 w-6 h-6 border-l border-b border-[#F5F5F5]/[0.08]"
-                            initial={{ opacity: 0, scale: 0.5 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: 0.6, duration: 0.6, ease: easeOutExpo }}
-                        />
-                        <motion.div
-                            className="absolute bottom-8 right-8 w-6 h-6 border-r border-b border-[#F5F5F5]/[0.08]"
-                            initial={{ opacity: 0, scale: 0.5 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: 0.7, duration: 0.6, ease: easeOutExpo }}
-                        />
-                    </div>
-                </motion.div>
+                    {/* ─── Corner brackets ─── */}
+                    {/* Top-left */}
+                    <motion.div
+                        style={{
+                            position: 'absolute',
+                            top: 'calc(50% - clamp(240px, 30vw, 420px) * 3 / 8 - 24px)',
+                            left: 'calc(50% - clamp(240px, 30vw, 420px) / 2 - 24px)',
+                            width: bracketLen,
+                            height: bracketLen,
+                            borderTop: `1px solid ${DARK_BROWN}`,
+                            borderLeft: `1px solid ${DARK_BROWN}`,
+                            zIndex: 4,
+                        }}
+                        initial={{ opacity: 0, scale: 1.05 }}
+                        animate={showBrackets ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 1.05 }}
+                        transition={{ duration: 0.6, ease: 'easeOut' }}
+                    />
+                    {/* Top-right */}
+                    <motion.div
+                        style={{
+                            position: 'absolute',
+                            top: 'calc(50% - clamp(240px, 30vw, 420px) * 3 / 8 - 24px)',
+                            right: 'calc(50% - clamp(240px, 30vw, 420px) / 2 - 24px)',
+                            width: bracketLen,
+                            height: bracketLen,
+                            borderTop: `1px solid ${DARK_BROWN}`,
+                            borderRight: `1px solid ${DARK_BROWN}`,
+                            zIndex: 4,
+                        }}
+                        initial={{ opacity: 0, scale: 1.05 }}
+                        animate={showBrackets ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 1.05 }}
+                        transition={{ duration: 0.6, ease: 'easeOut' }}
+                    />
+                    {/* Bottom-left */}
+                    <motion.div
+                        style={{
+                            position: 'absolute',
+                            bottom: 'calc(50% - clamp(240px, 30vw, 420px) * 3 / 8 - 24px)',
+                            left: 'calc(50% - clamp(240px, 30vw, 420px) / 2 - 24px)',
+                            width: bracketLen,
+                            height: bracketLen,
+                            borderBottom: `1px solid ${DARK_BROWN}`,
+                            borderLeft: `1px solid ${DARK_BROWN}`,
+                            zIndex: 4,
+                        }}
+                        initial={{ opacity: 0, scale: 1.05 }}
+                        animate={showBrackets ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 1.05 }}
+                        transition={{ duration: 0.6, ease: 'easeOut' }}
+                    />
+                    {/* Bottom-right */}
+                    <motion.div
+                        style={{
+                            position: 'absolute',
+                            bottom: 'calc(50% - clamp(240px, 30vw, 420px) * 3 / 8 - 24px)',
+                            right: 'calc(50% - clamp(240px, 30vw, 420px) / 2 - 24px)',
+                            width: bracketLen,
+                            height: bracketLen,
+                            borderBottom: `1px solid ${DARK_BROWN}`,
+                            borderRight: `1px solid ${DARK_BROWN}`,
+                            zIndex: 4,
+                        }}
+                        initial={{ opacity: 0, scale: 1.05 }}
+                        animate={showBrackets ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 1.05 }}
+                        transition={{ duration: 0.6, ease: 'easeOut' }}
+                    />
+                </div>
 
-                {/* ─── Bottom curtain (splits apart) ─── */}
-                <motion.div
-                    className="fixed bottom-0 left-0 right-0 z-[9998] h-[6px]"
-                    style={{ background: '#F5F5F5' }}
-                    initial={{ scaleX: 0 }}
-                    animate={
-                        phase === 'reveal'
-                            ? { scaleX: [1, 1], opacity: [1, 0], y: 10 }
-                            : { scaleX: 1 }
-                    }
-                    transition={
-                        phase === 'reveal'
-                            ? { duration: 0.6, ease: easeInOutQuart, delay: 0.05 }
-                            : { duration: 1.8, ease: easeOutExpo, delay: 0.8 }
-                    }
-                />
-            </>
+                {/* ─── Tagline — bottom center, static ─── */}
+                <div
+                    style={{
+                        position: 'absolute',
+                        bottom: 'clamp(20px, 2.5vh, 32px)',
+                        left: '50%',
+                        transform: 'translateX(-50%)',
+                        color: TAGLINE_COLOR,
+                        fontSize: 'clamp(9px, 0.6vw, 11px)',
+                        fontWeight: 300,
+                        fontFamily: "'Inter', system-ui, sans-serif",
+                        letterSpacing: '0.15em',
+                        textTransform: 'uppercase',
+                        whiteSpace: 'nowrap',
+                    }}
+                >
+                    Fine Arts And Photography Society
+                </div>
+            </motion.div>
         </AnimatePresence>
     );
 }

@@ -1,194 +1,738 @@
 [
-    {
-        "id": "gal-001",
-        "title": "Golden Hour at the Campus Lake",
-        "category": "Photography",
-        "imageUrl": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
-        "photographer": "Arjun Verma",
-        "date": "2025-11-20"
-    },
-    {
-        "id": "gal-002",
-        "title": "Abstract Waves",
-        "category": "Art",
-        "imageUrl": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=800&h=1000&fit=crop",
-        "photographer": "Priya Kapoor",
-        "date": "2025-11-15"
-    },
-    {
-        "id": "gal-003",
-        "title": "City Lights After Rain",
-        "category": "Photography",
-        "imageUrl": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=800&h=600&fit=crop",
-        "photographer": "Rohan Mehta",
-        "date": "2025-11-10"
-    },
-    {
-        "id": "gal-004",
-        "title": "Digital Dreamscape",
-        "category": "Digital Design",
-        "imageUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&h=800&fit=crop",
-        "photographer": "Kabir Singh",
-        "date": "2025-11-05"
-    },
-    {
-        "id": "gal-005",
-        "title": "Portrait in Natural Light",
-        "category": "Photography",
-        "imageUrl": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&h=1000&fit=crop",
-        "photographer": "Diya Patel",
-        "date": "2025-10-28"
-    },
-    {
-        "id": "gal-006",
-        "title": "Watercolor Botanicals",
-        "category": "Art",
-        "imageUrl": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800&h=700&fit=crop",
-        "photographer": "Ananya Gupta",
-        "date": "2025-10-22"
-    },
-    {
-        "id": "gal-007",
-        "title": "Neon Typography",
-        "category": "Digital Design",
-        "imageUrl": "https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=800&h=800&fit=crop",
-        "photographer": "Kabir Singh",
-        "date": "2025-10-18"
-    },
-    {
-        "id": "gal-008",
-        "title": "Morning Fog in the Valley",
-        "category": "Photography",
-        "imageUrl": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=600&fit=crop",
-        "photographer": "Arjun Verma",
-        "date": "2025-10-12"
-    },
-    {
-        "id": "gal-009",
-        "title": "Collage of Cultures",
-        "category": "Mixed Media",
-        "imageUrl": "https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=800&h=900&fit=crop",
-        "photographer": "Priya Kapoor",
-        "date": "2025-10-05"
-    },
-    {
-        "id": "gal-010",
-        "title": "The Old Bookstore",
-        "category": "Photography",
-        "imageUrl": "https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=800&h=600&fit=crop",
-        "photographer": "Rohan Mehta",
-        "date": "2025-09-28"
-    },
-    {
-        "id": "gal-011",
-        "title": "Geometric Harmony",
-        "category": "Digital Design",
-        "imageUrl": "https://images.unsplash.com/photo-1550859492-d5da9d8e45f3?w=800&h=800&fit=crop",
-        "photographer": "Vikram Rao",
-        "date": "2025-09-22"
-    },
-    {
-        "id": "gal-012",
-        "title": "Canvas Textures",
-        "category": "Art",
-        "imageUrl": "https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=800&h=900&fit=crop",
-        "photographer": "Ananya Gupta",
-        "date": "2025-09-15"
-    },
-    {
-        "id": "gal-013",
-        "title": "Street Shadows",
-        "category": "Photography",
-        "imageUrl": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&h=600&fit=crop",
-        "photographer": "Arjun Verma",
-        "date": "2025-09-10"
-    },
-    {
-        "id": "gal-014",
-        "title": "Fluid Motion",
-        "category": "Mixed Media",
-        "imageUrl": "https://images.unsplash.com/photo-1574169208507-84376144848b?w=800&h=800&fit=crop",
-        "photographer": "Priya Kapoor",
-        "date": "2025-09-05"
-    },
-    {
-        "id": "gal-015",
-        "title": "Sunset Silhouettes",
-        "category": "Photography",
-        "imageUrl": "https://images.unsplash.com/photo-1495616811223-4d98c6e9c869?w=800&h=600&fit=crop",
-        "photographer": "Diya Patel",
-        "date": "2025-08-30"
-    },
-    {
-        "id": "gal-016",
-        "title": "Poster Series: Campus Life",
-        "category": "Digital Design",
-        "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&h=1000&fit=crop",
-        "photographer": "Kabir Singh",
-        "date": "2025-08-25"
-    },
-    {
-        "id": "gal-017",
-        "title": "Oil on Canvas: Serenity",
-        "category": "Art",
-        "imageUrl": "https://images.unsplash.com/photo-1549490349-8643362247b5?w=800&h=700&fit=crop",
-        "photographer": "Ananya Gupta",
-        "date": "2025-08-18"
-    },
-    {
-        "id": "gal-018",
-        "title": "Architectural Details",
-        "category": "Photography",
-        "imageUrl": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&h=600&fit=crop",
-        "photographer": "Rohan Mehta",
-        "date": "2025-08-12"
-    },
-    {
-        "id": "gal-019",
-        "title": "Mixed Media Installation",
-        "category": "Mixed Media",
-        "imageUrl": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&h=800&fit=crop",
-        "photographer": "Ishita Nair",
-        "date": "2025-08-05"
-    },
-    {
-        "id": "gal-020",
-        "title": "Macro World",
-        "category": "Photography",
-        "imageUrl": "https://images.unsplash.com/photo-1490750967868-88aa4f44baee?w=800&h=700&fit=crop",
-        "photographer": "Arjun Verma",
-        "date": "2025-07-28"
-    },
-    {
-        "id": "gal-021",
-        "title": "Brand Identity Concept",
-        "category": "Digital Design",
-        "imageUrl": "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800&h=800&fit=crop",
-        "photographer": "Vikram Rao",
-        "date": "2025-07-20"
-    },
-    {
-        "id": "gal-022",
-        "title": "Ink & Paper Dreams",
-        "category": "Art",
-        "imageUrl": "https://images.unsplash.com/photo-1582201942988-13e60e4556ee?w=800&h=900&fit=crop",
-        "photographer": "Priya Kapoor",
-        "date": "2025-07-15"
-    },
-    {
-        "id": "gal-023",
-        "title": "The Chai Wallah",
-        "category": "Photography",
-        "imageUrl": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&h=600&fit=crop",
-        "photographer": "Rohan Mehta",
-        "date": "2025-07-08"
-    },
-    {
-        "id": "gal-024",
-        "title": "Textured Abstraction",
-        "category": "Mixed Media",
-        "imageUrl": "https://images.unsplash.com/photo-1482160549825-59d1b23cb208?w=800&h=800&fit=crop",
-        "photographer": "Ananya Gupta",
-        "date": "2025-07-01"
-    }
+  {
+    "id": "art-001",
+    "title": "Freed From The Shell",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Daksh_Dang_Freed_From_The_Shell.jpg",
+    "photographer": "Daksh Dang",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-002",
+    "title": "Michael Schumacher F1",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Daksh_Dang_Michael_Schumacher_F1.jpg",
+    "photographer": "Daksh Dang",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-003",
+    "title": "Quarkonaut",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Daksh_Dang_Quarkonaut.png",
+    "photographer": "Daksh Dang",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-004",
+    "title": "Artwork Piece",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/anisha_IMG_20260326_211222.jpg",
+    "photographer": "Anisha",
+    "date": "2026-03-26"
+  },
+  {
+    "id": "art-005",
+    "title": "Artwork Study 1",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/himanshi1.jpg",
+    "photographer": "Himanshi",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-006",
+    "title": "Artwork Study 2",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/himanshi2.jpg",
+    "photographer": "Himanshi",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-007",
+    "title": "Her Inner Cosmos",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Himanshi_Her_inner_cosmos.jpg",
+    "photographer": "Himanshi",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-008",
+    "title": "Artistic Expression",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Himanshi__.jpg",
+    "photographer": "Himanshi",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-009",
+    "title": "Creative Work 1",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Janya_Garg_IMG_0184.JPG",
+    "photographer": "Janya Garg",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-010",
+    "title": "Creative Work 2",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Janya_Garg_IMG_1373.JPG",
+    "photographer": "Janya Garg",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-011",
+    "title": "Creative Work 3",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Janya_Garg_IMG_1383.JPG",
+    "photographer": "Janya Garg",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-012",
+    "title": "Creative Work 4",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Janya_Garg_IMG_3334.JPG",
+    "photographer": "Janya Garg",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-013",
+    "title": "Artistic Piece 1",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Kanishka_Jain_IMG-20250831-WA0067.jpg",
+    "photographer": "Kanishka Jain",
+    "date": "2025-08-31"
+  },
+  {
+    "id": "art-014",
+    "title": "Artistic Piece 2",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Kanishka_Jain_IMG-20250831-WA0070.jpg",
+    "photographer": "Kanishka Jain",
+    "date": "2025-08-31"
+  },
+  {
+    "id": "art-015",
+    "title": "Studio Work",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Kanishka_Jain_IMG_20251110_173230.jpg",
+    "photographer": "Kanishka Jain",
+    "date": "2025-11-10"
+  },
+  {
+    "id": "art-016",
+    "title": "Recent Creation",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Kanishka_Jain_IMG_20260327_121513.jpg",
+    "photographer": "Kanishka Jain",
+    "date": "2026-03-27"
+  },
+  {
+    "id": "art-017",
+    "title": "Design Study 1",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/kartik_sharma.jpg",
+    "photographer": "Kartik Sharma",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-018",
+    "title": "Design Study 2",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/kartik_sharma_2.jpg",
+    "photographer": "Kartik Sharma",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-019",
+    "title": "Design Study 3",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/kartik_sharma3.jpg",
+    "photographer": "Kartik Sharma",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-020",
+    "title": "Big 26",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Kartik_Sharma_Big26.jpg",
+    "photographer": "Kartik Sharma",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-021",
+    "title": "Resident Evil 4",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Kartik_Sharma_Resident_Evil_4.jpg",
+    "photographer": "Kartik Sharma",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-022",
+    "title": "Yorr",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Kartik_Sharma_Yorr.jpg",
+    "photographer": "Kartik Sharma",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-023",
+    "title": "Kavyanshi's Work 1",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/kavyanshi.jpg",
+    "photographer": "Kavyanshi",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-024",
+    "title": "Kavyanshi's Work 2",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Kavyanshi_IMG_20260327_012110.jpg",
+    "photographer": "Kavyanshi",
+    "date": "2026-03-27"
+  },
+  {
+    "id": "art-025",
+    "title": "Kunjal's Work 1",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Kunjal_3.jpg",
+    "photographer": "Kunjal",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-026",
+    "title": "Kunjal's Work 2",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Kunjal_4.jpg",
+    "photographer": "Kunjal",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-027",
+    "title": "Digital Creation",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Kunjal_Screenshot_2026-03-30_151458.png",
+    "photographer": "Kunjal",
+    "date": "2026-03-30"
+  },
+  {
+    "id": "art-028",
+    "title": "Mauli Negi Art 1",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/mauli_negi.jpg",
+    "photographer": "Mauli Negi",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-029",
+    "title": "Mauli Negi Art 2",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Mauli_Negi_Mauli_Negi_TIET_Final.jpg",
+    "photographer": "Mauli Negi",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-030",
+    "title": "Kaleidoscope 2024",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Noorpreet_kaleidoscope2024.jpg",
+    "photographer": "Noorpreet",
+    "date": "2024-01-01"
+  },
+  {
+    "id": "art-031",
+    "title": "Kaleidoscope 2025",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Noorpreet_kaleidoscope2025.jpg",
+    "photographer": "Noorpreet",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "art-032",
+    "title": "Surrealism",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Noorpreet_surrealism.jpg",
+    "photographer": "Noorpreet",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-033",
+    "title": "Priyal's Work 1",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Priyal.jpg",
+    "photographer": "Priyal Gupta",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-034",
+    "title": "Priyal's Work 2",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Priyal_Gupta_aa4ec77e-1999-46af-a8e3-e0da11636f07.jpg",
+    "photographer": "Priyal Gupta",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-035",
+    "title": "Samkit's Artwork",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/samkit.jpg",
+    "photographer": "Samkit",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-036",
+    "title": "Shashwat's Work 1",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/shashwat.jpg",
+    "photographer": "Shashwat",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-037",
+    "title": "Thomas Shelby",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Shashwat_Thomas_Shelby_.jpg",
+    "photographer": "Shashwat",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-038",
+    "title": "Walter White",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Shashwat_Walter_White_.jpg",
+    "photographer": "Shashwat",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-039",
+    "title": "Shreyash's Artwork",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/shreyash.jpg",
+    "photographer": "Shreyash",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-040",
+    "title": "Vinayak's Design 1",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/vinayak.jpg",
+    "photographer": "Vinayak",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-041",
+    "title": "Vinayak's Photo 1",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Vinayak_IMG_7084.JPG",
+    "photographer": "Vinayak",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-042",
+    "title": "Vinayak's Photo 2",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Vinayak_IMG_8828.jpeg",
+    "photographer": "Vinayak",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-043",
+    "title": "Vinayak's Photo 3",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Vinayak_IMG_8902.JPG",
+    "photographer": "Vinayak",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "art-044",
+    "title": "Vinayak's Photo 4",
+    "category": "Art",
+    "imageUrl": "/Gallery/art/Vinayak_IMG_9719.JPG",
+    "photographer": "Vinayak",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "design-001",
+    "title": "Anisha Design",
+    "category": "Design",
+    "imageUrl": "/Gallery/design/Anisha.jpg",
+    "photographer": "Anisha",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "design-002",
+    "title": "Anisha Design 2",
+    "category": "Design",
+    "imageUrl": "/Gallery/design/anisha2.jpg",
+    "photographer": "Anisha",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "design-003",
+    "title": "Graphic Artwork",
+    "category": "Design",
+    "imageUrl": "/Gallery/design/Anshika_Agarwal_graphic_artwork.png",
+    "photographer": "Anshika Agarwal",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "design-004",
+    "title": "Bhavika's Artwork",
+    "category": "Design",
+    "imageUrl": "/Gallery/design/Bhavika_artwork.png",
+    "photographer": "Bhavika",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "design-005",
+    "title": "Digital Design 1",
+    "category": "Design",
+    "imageUrl": "/Gallery/design/devishi_54090268-c88c-4d18-9e5d-1e373a4ad745.jpg",
+    "photographer": "Devishi",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "design-006",
+    "title": "Digital Design 2",
+    "category": "Design",
+    "imageUrl": "/Gallery/design/devishi_960b4993-a78f-40a8-acaa-b1bd41419d69.jpg",
+    "photographer": "Devishi",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "design-007",
+    "title": "Brutalism",
+    "category": "Design",
+    "imageUrl": "/Gallery/design/devishi_brutalism_devishi.png",
+    "photographer": "Devishi",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "design-008",
+    "title": "Studio Shot",
+    "category": "Design",
+    "imageUrl": "/Gallery/design/devishi_IMG_0467.PNG",
+    "photographer": "Devishi",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "design-009",
+    "title": "Design Concept",
+    "category": "Design",
+    "imageUrl": "/Gallery/design/Rasleen_Pahuja_Document_from_Rasleen_Pahuja__1_.png",
+    "photographer": "Rasleen Pahuja",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "design-010",
+    "title": "Creative Work 1",
+    "category": "Design",
+    "imageUrl": "/Gallery/design/Rudrarnav_singharoy_32E7F179-0DDE-4A34-9D0A-6FD0DD5443CF.jpg",
+    "photographer": "Rudrarnav Singharoy",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "design-011",
+    "title": "Creative Work 2",
+    "category": "Design",
+    "imageUrl": "/Gallery/design/Rudrarnav_singharoy_703A5F84-9764-47A8-8DB6-ACE1EAA137A7.jpg",
+    "photographer": "Rudrarnav Singharoy",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "design-012",
+    "title": "Untitled 5 Feb 2026",
+    "category": "Design",
+    "imageUrl": "/Gallery/design/Rudrarnav_singharoy_Untitled_-_5_February_2026_01.04.jpg",
+    "photographer": "Rudrarnav Singharoy",
+    "date": "2026-02-05"
+  },
+  {
+    "id": "design-013",
+    "title": "Untitled 6 Mar 2026",
+    "category": "Design",
+    "imageUrl": "/Gallery/design/Rudrarnav_singharoy_Untitled_-_6_March_2026_17.46.58.jpg",
+    "photographer": "Rudrarnav Singharoy",
+    "date": "2026-03-06"
+  },
+  {
+    "id": "design-014",
+    "title": "Breaking Bad",
+    "category": "Design",
+    "imageUrl": "/Gallery/design/Ustat_BreakingBad.jpg",
+    "photographer": "Ustat",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "design-015",
+    "title": "Bunny",
+    "category": "Design",
+    "imageUrl": "/Gallery/design/Ustat_bunny.jpg",
+    "photographer": "Ustat",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "design-016",
+    "title": "Skeleton",
+    "category": "Design",
+    "imageUrl": "/Gallery/design/Ustat_skelly.jpg",
+    "photographer": "Ustat",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "design-017",
+    "title": "Vinayak Design 1",
+    "category": "Design",
+    "imageUrl": "/Gallery/design/Vinayak_IMG_0169.PNG",
+    "photographer": "Vinayak",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "design-018",
+    "title": "Vinayak Design 2",
+    "category": "Design",
+    "imageUrl": "/Gallery/design/Vinayak_IMG_8934.PNG",
+    "photographer": "Vinayak",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-001",
+    "title": "Aadya Dev Portrait 1",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Aadya Dev.jpeg",
+    "photographer": "Aadya Dev",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-002",
+    "title": "Aadya Dev Portrait 2",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Aadya Dev(1).jpeg",
+    "photographer": "Aadya Dev",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-003",
+    "title": "Amartya Rana Portrait",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Amartya Rana.jpg",
+    "photographer": "Amartya Rana",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-004",
+    "title": "Ansh Sharma Portrait",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Ansh Sharma.JPG",
+    "photographer": "Ansh Sharma",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-005",
+    "title": "Atulya Portrait 1",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Atulya.jpg",
+    "photographer": "Atulya",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-006",
+    "title": "Atulya Portrait 2",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Atulya(1).jpg",
+    "photographer": "Atulya",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-007",
+    "title": "Deep Portrait 1",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Deep.jpg",
+    "photographer": "Deep",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-008",
+    "title": "Deep Portrait 2",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Deep(1).jpg",
+    "photographer": "Deep",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-009",
+    "title": "Dhruv Prakash Portrait 1",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Dhruv Prakash.jpg",
+    "photographer": "Dhruv Prakash",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-010",
+    "title": "Dhruv Prakash Portrait 2",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Dhruv Prakash(1).jpg",
+    "photographer": "Dhruv Prakash",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-011",
+    "title": "Girik Portrait 1",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Girik.jpg",
+    "photographer": "Girik",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-012",
+    "title": "Girik Portrait 2",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/GIrik(1).jpg",
+    "photographer": "Girik",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-013",
+    "title": "Gursimar Singh Portrait 1",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Gursimar SIngh.jpg",
+    "photographer": "Gursimar Singh",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-014",
+    "title": "Gursimar Singh Portrait 2",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Gursimar Singh(1).jpg",
+    "photographer": "Gursimar Singh",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-015",
+    "title": "Harkiran Portrait 1",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Harkiran.jpg",
+    "photographer": "Harkiran",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-016",
+    "title": "Harkiran Portrait 2",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Harkiran.png",
+    "photographer": "Harkiran",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-017",
+    "title": "Hriday Kapoor Portrait 1",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Hriday Kapoor.jpg",
+    "photographer": "Hriday Kapoor",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-018",
+    "title": "Hriday Kapoor Portrait 2",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Hriday Kapoor(1).jpg",
+    "photographer": "Hriday Kapoor",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-019",
+    "title": "Karan Portrait 1",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Karan.jpg",
+    "photographer": "Karan",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-020",
+    "title": "Karan Portrait 2",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Karan(1).jpg",
+    "photographer": "Karan",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-021",
+    "title": "Krish Sahni Portrait",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Krish Sahni.jpg",
+    "photographer": "Krish Sahni",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-022",
+    "title": "Manit Gupta Portrait",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Manit Gupta.jpg",
+    "photographer": "Manit Gupta",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-023",
+    "title": "Parth Sharma Portrait",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Parth Sharma.jpg",
+    "photographer": "Parth Sharma",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-024",
+    "title": "Rishit Sharma Portrait 1",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Rishit Sharma.jpg",
+    "photographer": "Rishit Sharma",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-025",
+    "title": "Rishit Sharma Portrait 2",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Rishit Sharma(1).jpg",
+    "photographer": "Rishit Sharma",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-026",
+    "title": "Rishit Sharma Portrait 3",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Rishit Sharma2.jpg",
+    "photographer": "Rishit Sharma",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-027",
+    "title": "Sankalp Portrait 1",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Sankalp.jpg",
+    "photographer": "Sankalp",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-028",
+    "title": "Sankalp Portrait 2",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Sankalp(1).jpg",
+    "photographer": "Sankalp",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-029",
+    "title": "Sankalp Portrait 3",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Sankalp(2).jpg",
+    "photographer": "Sankalp",
+    "date": "2026-01-01"
+  },
+  {
+    "id": "photo-030",
+    "title": "Ulfat Portrait",
+    "category": "Photography",
+    "imageUrl": "/Gallery/photography/Ulfat.jpeg",
+    "photographer": "Ulfat",
+    "date": "2026-01-01"
+  }
 ]

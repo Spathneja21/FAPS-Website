@@ -133,9 +133,6 @@ export default function GallerySection() {
                                     <p className="text-white/40 text-[8px] md:text-[10px] tracking-[0.3em] uppercase mb-0.5 md:mb-1">
                                         {item.category}
                                     </p>
-                                    <h3 className="text-white text-base md:text-lg font-display font-bold">
-                                        {item.title}
-                                    </h3>
                                     <p className="text-white/40 text-[10px] md:text-xs mt-0.5 md:mt-1">{item.photographer}</p>
                                 </div>
                             </div>
@@ -198,10 +195,7 @@ export default function GallerySection() {
                                     />
                                 </div>
                                 <div className="mt-6 text-center max-w-xl pointer-events-auto">
-                                    <h3 className="text-white text-lg md:text-2xl font-display font-bold">
-                                        {filteredItems[lightboxIndex].title}
-                                    </h3>
-                                    <p className="text-white/40 text-[10px] md:text-sm mt-1 uppercase tracking-widest">
+                                    <p className="text-white/40 text-[10px] md:text-sm uppercase tracking-widest">
                                         {filteredItems[lightboxIndex].photographer} · {filteredItems[lightboxIndex].category}
                                     </p>
                                 </div>
