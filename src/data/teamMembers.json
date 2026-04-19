@@ -4,7 +4,7 @@
         "name": "Dr. Ashima Singh",
         "role": "President",
         "category": "Faculty Advisor",
-        "bio": "Professor of Fine Arts with 20+ years of experience. Dedicated to fostering creative excellence and providing guidance to the next generation of artists and photographers.",
+        "bio": "Assistant Professor in Computer Science and Engineering Department, at Thapar Institute of Engineering & Technology, Patiala. Ashima Singh was appointed, in 2006, to Computer Science and Engineering Department as Assistant Professor. She has earned Ph.D. in Computer Engineering and holds a Master's Degree, with distinction in Computer Science. She has more than ten years of experience in teaching and research both at UG/PG levels.",
         "photo": "/Team images/President Dr. Ashima.jpg.jpeg",
         "socialLinks": {
             "instagram": "https://instagram.com/",
@@ -16,7 +16,7 @@
         "name": "Dr. Vikas Sharma",
         "role": "Vice President",
         "category": "Faculty Advisor",
-        "bio": "Passionate about the intersection of art and technology, guiding students to push their creative boundaries in photography and digital design.",
+        "bio": "Associate Professor in the Department of Mathematics at Thapar Institute of Engineering and Technology, Patiala, where he has been serving since 2009. He obtained his Ph.D. in Mathematical Programming from Panjab University, Chandigarh in 2012. His research focuses on optimization theory and mathematical programming, with particular emphasis on linear and nonlinear optimization, integer programming, financial mathematics, and portfolio optimization.",
         "photo": "/Team images/Vice President Dr. Vikas.jpg.jpeg",
         "socialLinks": {
             "instagram": "https://instagram.com/",
@@ -28,7 +28,7 @@
         "name": "Dr. Prableen Kaur",
         "role": "Vice President",
         "category": "Faculty Advisor",
-        "bio": "Passionate about the intersection of art and technology, guiding students to push their creative boundaries in photography and digital design.",
+        "bio": "Doctor of philosophy In lacquer art in the context of artist Jeet Singh to perceive by chance his concealed art technique and flair in lacquer art during field work and research. Attended many Art Workshops and Exhibitions to glorify and exalt skills. Served as a lecturer for one year to enhance the skills and taught students the various forms of Art.",
         "photo": "/Team images/Ms_Prabhleen.jpeg",
         "socialLinks": {
             "instagram": "https://instagram.com/",
@@ -39,7 +39,6 @@
         "id": "tm-001",
         "name": "Aditi Pattnaik",
         "role": "General Secretary",
-        "bio": "A visionary leader blending traditional art with modern aesthetics. Passionate about building creative communities.",
         "photo": "/Team images/Aditi.png",
         "socialLinks": {
             "instagram": "https://instagram.com/aanyasharma",
@@ -50,7 +49,6 @@
         "id": "tm-002",
         "name": "Sahil",
         "role": "General Secretary",
-        "bio": "Photographer and storyteller. Believes every frame holds a universe waiting to be discovered.",
         "photo": "/Team images/Sahil.png",
         "socialLinks": {
             "instagram": "https://instagram.com/rohanmehta",
@@ -61,7 +59,6 @@
         "id": "tm-003",
         "name": "Dhruv Prakash",
         "role": "Joint Secretary",
-        "bio": "Digital artist and UI designer. Turns pixels into poetry and interfaces into experiences.",
         "photo": "/Team images/Dhruv.png",
         "socialLinks": {
             "instagram": "https://instagram.com/priyakapoor",
@@ -72,7 +69,6 @@
         "id": "tm-004",
         "name": "Aanya Agrawal",
         "role": "Joint Secretary",
-        "bio": "Street photographer with an eye for the extraordinary in the ordinary. Canon enthusiast.",
         "photo": "/Team images/aanya.png",
         "socialLinks": {
             "instagram": "https://instagram.com/arjunverma",
@@ -83,7 +79,6 @@
         "id": "tm-005",
         "name": "Pranav Singh",
         "role": "Joint Secretary",
-        "bio": "The one who makes things happen. From exhibitions to workshops — if it's an event, she's behind it.",
         "photo": "/Team images/Pranav.png",
         "socialLinks": {
             "instagram": "https://instagram.com/ishitanair",
@@ -94,7 +89,6 @@
         "id": "tm-006",
         "name": "Shabd Sharma",
         "role": "Editor-in-Chief",
-        "bio": "Graphic designer and typography nerd. Obsessed with visual systems and brand consistency.",
         "photo": "/Team images/Shabd.png",
         "socialLinks": {
             "instagram": "https://instagram.com/kabirsingh",
@@ -105,7 +99,6 @@
         "id": "tm-007",
         "name": "Tara Verma",
         "role": "Editor-in-Chief",
-        "bio": "Content creator and social strategist. Amplifies the society's voice across platforms.",
         "photo": "/Team images/Tara.png",
         "socialLinks": {
             "instagram": "https://instagram.com/diyapatel",
@@ -116,7 +109,6 @@
         "id": "tm-008",
         "name": "Eva Singh",
         "role": "Editor-in-Chief",
-        "bio": "Web developer and creative coder. Bridges the gap between art and technology.",
         "photo": "/Team images/Eva.png",
         "socialLinks": {
             "instagram": "https://instagram.com/vikramrao",
@@ -127,7 +119,6 @@
         "id": "tm-009",
         "name": "Shubham",
         "role": "Head of Designing",
-        "bio": "Professor of Fine Arts with 15+ years of experience. Guides the society's artistic direction.",
         "photo": "/Team images/Shubham.png",
         "socialLinks": {
             "instagram": "https://instagram.com/profmeerajoshi",
@@ -138,7 +129,6 @@
         "id": "tm-010",
         "name": "Akshat",
         "role": "Head of Designing",
-        "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
         "photo": "/Team images/Akshat.png",
         "socialLinks": {
             "instagram": "https://instagram.com/ananyagupta",
@@ -149,7 +139,6 @@
         "id": "tm-011",
         "name": "Vaishnavi Singh",
         "role": "Head of Painting",
-        "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
         "photo": "/Team images/Vaishnavi.png",
         "socialLinks": {
             "instagram": "https://instagram.com/ananyagupta",
@@ -160,7 +149,6 @@
         "id": "tm-012",
         "name": "Simarpreet Kaur",
         "role": "Head of Painting",
-        "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
         "photo": "/Team images/Simarpreet.png",
         "socialLinks": {
             "instagram": "https://instagram.com/ananyagupta",
@@ -171,7 +159,6 @@
         "id": "tm-013",
         "name": "Guranshdeep Singh",
         "role": "Head of Painting",
-        "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
         "photo": "/Team images/Guransh.png",
         "socialLinks": {
             "instagram": "https://instagram.com/ananyagupta",
@@ -182,7 +169,6 @@
         "id": "tm-014",
         "name": "Gursimar Singh",
         "role": "Head of Photography",
-        "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
         "photo": "/Team images/Gursimar.png",
         "socialLinks": {
             "instagram": "https://instagram.com/ananyagupta",
@@ -191,9 +177,8 @@
     },
     {
         "id": "tm-015",
-        "name": "Baldev",
+        "name": "Dhruv Birthal",
         "role": "Head of Photography",
-        "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
         "photo": "/Team images/Dhruv Birthal.png",
         "socialLinks": {
             "instagram": "https://instagram.com/ananyagupta",
@@ -204,7 +189,6 @@
         "id": "tm-016",
         "name": "Gauri Gujral",
         "role": "Head of Photography",
-        "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
         "photo": "/Team images/Gauri.png",
         "socialLinks": {
             "instagram": "https://instagram.com/ananyagupta",
@@ -215,7 +199,6 @@
         "id": "tm-017",
         "name": "Puneet",
         "role": "Head of Marketing",
-        "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
         "photo": "/Team images/Puneet.png",
         "socialLinks": {
             "instagram": "https://instagram.com/ananyagupta",
@@ -226,7 +209,6 @@
         "id": "tm-018",
         "name": "Jeevesh Dass",
         "role": "Head of Sketching",
-        "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
         "photo": "/Team images/Jeveesh.png",
         "socialLinks": {
             "instagram": "https://instagram.com/ananyagupta",
@@ -237,7 +219,6 @@
         "id": "tm-019",
         "name": "Ayush Garg",
         "role": "Head of Sketching",
-        "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
         "photo": "/Team images/Ayush.png",
         "socialLinks": {
             "instagram": "https://instagram.com/ananyagupta",
@@ -248,7 +229,6 @@
         "id": "tm-020",
         "name": "Arpit Singh",
         "role": "Head of Sketching",
-        "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
         "photo": "/Team images/Arpit.png",
         "socialLinks": {
             "instagram": "https://instagram.com/ananyagupta",
@@ -259,7 +239,6 @@
         "id": "tm-021",
         "name": "Praniti Tandon",
         "role": "Head of Cinematography",
-        "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
         "photo": "/Team images/Praniti.png",
         "socialLinks": {
             "instagram": "https://instagram.com/ananyagupta",
@@ -270,7 +249,6 @@
         "id": "tm-022",
         "name": "Devender Singh",
         "role": "Head of Cinematography",
-        "bio": "Watercolor artist and painter. Finds beauty in the interplay of light and colour.",
         "photo": "/Team images/Devender.png",
         "socialLinks": {
             "instagram": "https://instagram.com/ananyagupta",

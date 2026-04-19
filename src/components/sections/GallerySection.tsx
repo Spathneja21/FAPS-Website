@@ -5,9 +5,9 @@ import { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 const Image = ({ src, alt, fill, className, sizes, ...props }: any) => {
     if (fill) {
-        return <img src={src} alt={alt} className={`absolute inset-0 w-full h-full ${className}`} {...props} />;
+        return <img src={src} alt={alt} className={`absolute inset-0 w-full h-full ${className}`} loading="lazy" {...props} />;
     }
-    return <img src={src} alt={alt} className={className} {...props} />;
+    return <img src={src} alt={alt} className={className} loading="lazy" {...props} />;
 };
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import VariableProximity from '../reactbits/VariableProximity';
@@ -35,6 +35,7 @@ const cardVariants = {
 
 export default function GallerySection() {
     const [activeCategory, setActiveCategory] = useState('All');
+    const [visibleCount, setVisibleCount] = useState(12);
     const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
     const containerRef = useRef<HTMLDivElement>(null);
 
@@ -42,6 +43,17 @@ export default function GallerySection() {
         activeCategory === 'All'
             ? galleryItems
             : galleryItems.filter(item => item.category === activeCategory);
+
+    const displayedItems = filteredItems.slice(0, visibleCount);
+
+    const handleCategoryChange = (cat: string) => {
+        setActiveCategory(cat);
+        setVisibleCount(12);
+    };
+
+    const handleLoadMore = () => {
+        setVisibleCount(prev => prev + 12);
+    };
 
     const openLightbox = (index: number) => setLightboxIndex(index);
     const closeLightbox = () => setLightboxIndex(null);
@@ -94,7 +106,7 @@ export default function GallerySection() {
                     {categories.map(cat => (
                         <button
                             key={cat}
-                            onClick={() => setActiveCategory(cat)}
+                            onClick={() => handleCategoryChange(cat)}
                             className={`cursor-target px-4 py-2 text-[10px] md:text-xs tracking-[0.15em] uppercase transition-all rounded-full border whitespace-nowrap shrink-0 ${activeCategory === cat
                                 ? 'bg-white text-black border-white'
                                 : 'bg-transparent text-white/40 border-white/10 hover:border-white/30 hover:text-white/60'
@@ -112,9 +124,9 @@ export default function GallerySection() {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.1 }}
-                    key={activeCategory}
+                    key={activeCategory + visibleCount}
                 >
-                    {filteredItems.map((item, index) => (
+                    {displayedItems.map((item, index) => (
                         <motion.div
                             key={`${item.title}-${index}`}
                             variants={cardVariants}
@@ -139,6 +151,18 @@ export default function GallerySection() {
                         </motion.div>
                     ))}
                 </motion.div>
+
+                {/* Load More Button */}
+                {visibleCount < filteredItems.length && (
+                    <div className="mt-12 flex justify-center">
+                        <button
+                            onClick={handleLoadMore}
+                            className="cursor-target px-8 py-3 bg-white/10 hover:bg-white/20 text-white text-xs tracking-widest uppercase transition-all rounded-full border border-white/20 hover:border-white/40 backdrop-blur-sm"
+                        >
+                            Load More
+                        </button>
+                    </div>
+                )}
                 {/* Lightbox refined below */}
                 <AnimatePresence>
                     {lightboxIndex !== null && (

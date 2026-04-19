@@ -68,7 +68,7 @@ export default function TeamSection() {
                                 className="cursor-target group relative aspect-[3/4] bg-surface overflow-hidden mx-auto w-full max-w-sm"
                             >
                                 {/* Member image */}
-                                <img src={member.photo} alt={member.name} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                                <img src={member.photo} alt={member.name} loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                                 <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-white/[0.02] pointer-events-none" />
 
                                 {/* Content overlay */}
@@ -108,7 +108,7 @@ export default function TeamSection() {
                                 className="cursor-target group relative aspect-[3/4] bg-surface overflow-hidden"
                             >
                                 {/* Member image */}
-                                <img src={member.photo} alt={member.name} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                                <img src={member.photo} alt={member.name} loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                                 <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-white/[0.02] pointer-events-none" />
 
                                 {/* Number (only for regular team elements, optionally) */}

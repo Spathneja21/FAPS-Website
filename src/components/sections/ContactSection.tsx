@@ -23,12 +23,38 @@ export default function ContactSection() {
     const containerRef = useRef<HTMLDivElement>(null);
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
     const [submitted, setSubmitted] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        setSubmitted(true);
-        setTimeout(() => setSubmitted(false), 3000);
-        setFormState({ name: '', email: '', message: '' });
+        setIsSubmitting(true);
+
+        try {
+            // ❌ DO NOT put your 'docs.google.com/spreadsheets/...' link here. It will not work!
+            // ✅ You MUST create the Apps Script Web App as instructed to get a URL that ends in '/exec'
+            const GOOGLE_SCRIPT_URL = "YOUR_GOOGLE_SCRIPT_WEB_APP_URL_HERE";
+
+            const formData = new FormData();
+            formData.append('Name', formState.name);
+            formData.append('Email', formState.email);
+            formData.append('Message', formState.message);
+            formData.append('Date', new Date().toLocaleString());
+
+            await fetch(GOOGLE_SCRIPT_URL, {
+                method: 'POST',
+                body: formData,
+                mode: 'no-cors' // required to bypass CORS blocking on Google Scripts
+            });
+
+            setSubmitted(true);
+            setTimeout(() => setSubmitted(false), 5000);
+            setFormState({ name: '', email: '', message: '' });
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            alert('Failed to send message. Please try again later.');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -135,9 +161,10 @@ export default function ContactSection() {
 
                         <button
                             type="submit"
-                            className="cursor-target group flex items-center gap-3 bg-white text-black px-8 py-3 rounded-full text-sm font-semibold uppercase tracking-[0.1em] hover:bg-white/90 transition-colors"
+                            disabled={isSubmitting}
+                            className={`cursor-target group flex items-center gap-3 bg-white text-black px-8 py-3 rounded-full text-sm font-semibold uppercase tracking-[0.1em] transition-colors ${isSubmitting ? 'opacity-70 cursor-not-allowed' : 'hover:bg-white/90'}`}
                         >
-                            <span>{submitted ? 'Sent!' : 'Get in touch'}</span>
+                            <span>{isSubmitting ? 'Sending...' : submitted ? 'Sent!' : 'Get in touch'}</span>
                             <svg
                                 className="w-4 h-4 group-hover:translate-x-1 transition-transform"
                                 fill="none"

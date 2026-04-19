@@ -1,18 +1,23 @@
-
 import EventDetailContent from '../EventDetailContent';
 
 export const metadata = {
     id: "evt-004",
-    title: "Aperture: Inter-College Photography Contest",
-    description: "The first edition of our inter-college photography competition. Theme: 'Unseen Perspectives'. Cash prizes, certificates, and feature on FAPS social media for winners. Submissions open to all college students.",
-    date: "2025-12-10",
-    time: "All Day",
-    venue: "Online Submission + Gallery at Seminar Hall",
-    image: "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=800&h=500&fit=crop",
+    title: "Kaleidoscope '23",
+    description: "Kaleidoscope '23 was an unforgettable celebration of creativity and expression. Featuring mesmerizing art installations, vibrant photography exhibits, and breathtaking immersive decor, the event left everyone spellbound. It brought together artists, creators, and enthusiasts under one roof to celebrate the true essence of art, setting the stage for the massive cultural phenomenon that Kaleidoscope was destined to become.",
+    date: "30 october 2023",
+    time: "04:00 PM - 8:00 PM",
+    venue: "FETE AREA",
+    image: "/events/Kal _23/1 (1).jpeg",
     status: "past" as const,
-    registrationLink: ""
+    registrationLink: "",
+    galleryImages: [
+        "/events/Kal _23/1 (1).jpeg",
+        "/events/Kal _23/1 (2).jpeg",
+        "/events/Kal _23/1 (3).jpeg",
+        "/events/Kal _23/1 (4).jpeg"
+    ]
 };
 
-export default function ApertureContest({ onBack }: { onBack: () => void }) {
+export default function Event004({ onBack }: { onBack: () => void }) {
     return <EventDetailContent event={metadata} onBack={onBack} />;
 }
