@@ -15,7 +15,7 @@ const dockItems = [
     {
         icon: <Mail size={24} color="#fff" />,
         label: 'Email',
-        href: 'mailto:faps@college.edu',
+        href: 'https://mail.google.com/mail/?view=cm&fs=1&to=faps@thapar.edu',
     },
 ];
 
@@ -23,37 +23,42 @@ export default function ContactSection() {
     const containerRef = useRef<HTMLDivElement>(null);
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
     const [submitted, setSubmitted] = useState(false);
-    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
+
+
+    const SPREADSHEET_ENDPOINT = "https://sheetdb.io/api/v1/l4uckou9yx44l";
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        setIsSubmitting(true);
+        setIsLoading(true);
 
         try {
-            // ❌ DO NOT put your 'docs.google.com/spreadsheets/...' link here. It will not work!
-            // ✅ You MUST create the Apps Script Web App as instructed to get a URL that ends in '/exec'
-            const GOOGLE_SCRIPT_URL = "YOUR_GOOGLE_SCRIPT_WEB_APP_URL_HERE";
-
+            // Must use FormData + no-cors for Google Apps Script:
+            // - FormData avoids setting Content-Type header, preventing CORS preflight
+            // - mode: 'no-cors' is required because Google Apps Script doesn't send CORS headers
+            // - Apps Script reads fields via e.parameter, which expects form-encoded data
             const formData = new FormData();
             formData.append('Name', formState.name);
             formData.append('Email', formState.email);
             formData.append('Message', formState.message);
             formData.append('Date', new Date().toLocaleString());
 
-            await fetch(GOOGLE_SCRIPT_URL, {
+            await fetch(SPREADSHEET_ENDPOINT, {
                 method: 'POST',
                 body: formData,
-                mode: 'no-cors' // required to bypass CORS blocking on Google Scripts
+                mode: 'no-cors', // Google Apps Script doesn't handle CORS preflight (OPTIONS) requests
             });
 
+            // With mode: 'no-cors', we can't read the response status (it returns opaque).
+            // If the fetch didn't throw, the request was sent successfully.
             setSubmitted(true);
-            setTimeout(() => setSubmitted(false), 5000);
             setFormState({ name: '', email: '', message: '' });
-        } catch (error) {
-            console.error('Error submitting form:', error);
-            alert('Failed to send message. Please try again later.');
+            setTimeout(() => setSubmitted(false), 3000);
+        } catch (error: any) {
+            console.error("Network Fetch Error:", error);
+            alert("Error connecting to the server: " + error.message);
         } finally {
-            setIsSubmitting(false);
+            setIsLoading(false);
         }
     };
 
@@ -161,10 +166,12 @@ export default function ContactSection() {
 
                         <button
                             type="submit"
-                            disabled={isSubmitting}
-                            className={`cursor-target group flex items-center gap-3 bg-white text-black px-8 py-3 rounded-full text-sm font-semibold uppercase tracking-[0.1em] transition-colors ${isSubmitting ? 'opacity-70 cursor-not-allowed' : 'hover:bg-white/90'}`}
+                            disabled={isLoading}
+                            className="cursor-target group flex items-center gap-3 bg-white text-black px-8 py-3 rounded-full text-sm font-semibold uppercase tracking-[0.1em] hover:bg-white/90 transition-colors disabled:opacity-50"
                         >
-                            <span>{isSubmitting ? 'Sending...' : submitted ? 'Sent!' : 'Get in touch'}</span>
+                            <span>
+                                {isLoading ? 'Sending...' : submitted ? 'Sent!' : 'Get in touch'}
+                            </span>
                             <svg
                                 className="w-4 h-4 group-hover:translate-x-1 transition-transform"
                                 fill="none"
