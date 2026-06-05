@@ -68,8 +68,8 @@ export default function GallerySection() {
     };
 
     return (
-        <section id="gallery" className="relative py-32 px-6 bg-[#131313]" ref={containerRef}>
-            <div className="max-w-7xl mx-auto">
+        <section id="gallery" className="relative py-32 px-6 md:px-10 bg-[#131313]" ref={containerRef}>
+            <div className="w-full">
                 {/* Section heading */}
                 <div className="mb-10 md:mb-12 border-b border-white/10 pb-6 md:pb-8 flex flex-col items-center text-center">
                     <motion.p

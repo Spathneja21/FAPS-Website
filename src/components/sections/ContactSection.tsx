@@ -63,8 +63,8 @@ export default function ContactSection() {
     };
 
     return (
-        <section id="contact" className="relative py-32 px-6 bg-[#131313]" ref={containerRef}>
-            <div className="max-w-5xl mx-auto">
+        <section id="contact" className="relative py-32 px-6 md:px-10 bg-[#131313]" ref={containerRef}>
+            <div className="w-full">
                 {/* Section heading */}
                 <div className="mb-12 md:mb-20 border-b border-white/10 pb-6 md:pb-8">
                     <motion.p

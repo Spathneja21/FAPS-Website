@@ -28,8 +28,8 @@ export default function TeamSection() {
     const containerRef = useRef<HTMLDivElement>(null);
 
     return (
-        <section id="team" className="relative py-32 px-6 bg-[#131313]" ref={containerRef}>
-            <div className="max-w-7xl mx-auto text-center">
+        <section id="team" className="relative py-32 px-6 md:px-10 bg-[#131313]" ref={containerRef}>
+            <div className="w-full text-center">
                 {/* Section heading */}
                 <div className="mb-12 md:mb-20 border-b border-white/10 pb-6 md:pb-8 text-center">
                     <motion.p

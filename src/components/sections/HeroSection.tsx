@@ -137,7 +137,7 @@ export default function HeroSection() {
 
             {/* ─── Info Sections (never fades — outside the opacity wrapper) ─── */}
             <div className="relative z-10 w-full px-6 md:px-12 pb-32">
-                <div className="max-w-6xl mx-auto flex flex-col gap-16 md:gap-24 text-left">
+                <div className="w-full flex flex-col gap-16 md:gap-24 text-left">
 
                     {/* ── Vision — full width ── */}
                     <motion.div

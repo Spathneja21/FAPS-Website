@@ -14,7 +14,7 @@ export default function EventsSection() {
     return (
         <section
             id="events"
-            className="relative py-32 px-6 strip-light overflow-hidden"
+            className="relative py-32 px-6 md:px-10 strip-light overflow-hidden"
             style={{ background: 'linear-gradient(180deg, #110600 0%, #0D0500 100%)' }}
             ref={containerRef}
         >
@@ -23,7 +23,7 @@ export default function EventsSection() {
             {/* Fog */}
             <div className="fog-layer" />
 
-            <div className="relative z-10 max-w-6xl mx-auto">
+            <div className="relative z-10 w-full">
                 {/* Section heading */}
                 <div className="mb-20 md:mb-28 border-b pb-8 md:pb-12 text-center" style={{ borderColor: '#3A1800' }}>
                     <motion.p
@@ -35,7 +35,7 @@ export default function EventsSection() {
                     >
                         OUR
                     </motion.p>
-                    <h2 className="text-6xl md:text-8xl font-display font-black leading-none" style={{ color: '#F5E6D3' }}>
+                    <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-black leading-none" style={{ color: '#F5E6D3' }}>
                         <VariableProximity
                             label="Events"
                             fromFontVariationSettings="'wght' 900, 'wdth' 100"

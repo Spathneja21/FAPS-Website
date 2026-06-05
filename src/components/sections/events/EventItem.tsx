@@ -25,29 +25,31 @@ export default function EventItem({ event, index, onClick }: EventItemProps) {
             transition={{ delay: index * 0.05, duration: 0.5 }}
         >
             <div
-                className="w-full py-8 md:py-12 flex flex-col md:flex-row md:items-center justify-between gap-6 cursor-pointer"
+                className="w-full py-6 sm:py-8 md:py-10 lg:py-12 flex flex-col md:flex-row md:items-center justify-between gap-6 cursor-pointer"
                 onClick={onClick}
             >
-                <div className="flex items-center gap-6 md:gap-12 min-w-0">
+                <div className="flex flex-1 items-center gap-4 sm:gap-6 md:gap-10 lg:gap-12 min-w-0">
                     {/* Number */}
-                    <span className="text-[10px] md:text-sm font-mono w-6 md:w-8 shrink-0" style={{ color: '#C45200', opacity: 0.5 }}>
+                    <span className="text-[10px] md:text-sm font-mono w-5 sm:w-6 md:w-8 lg:w-10 shrink-0" style={{ color: '#C45200', opacity: 0.5 }}>
                         {String(index + 1).padStart(2, '0')}
                     </span>
                     {/* Title & Info */}
-                    <div className="min-w-0 translate-x-0 group-hover:translate-x-3 transition-transform duration-500">
+                    <div className="flex-1 min-w-0 translate-x-0 group-hover:translate-x-3 transition-transform duration-500">
                         <h3
-                            className="text-2xl md:text-4xl font-display font-black leading-tight"
+                            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-display font-black leading-tight"
                             style={{ color: '#F5E6D3' }}
                         >
                             {event.title}
                         </h3>
-                        <p className="text-xs md:text-sm mt-3 tracking-wider uppercase font-light" style={{ color: '#A0785A' }}>
-                            {event.date} · <span style={{ color: '#D4824A' }}>{event.venue}</span>
+                        <p className="text-xs md:text-sm mt-3 tracking-wider uppercase font-light flex flex-wrap gap-x-1" style={{ color: '#A0785A' }}>
+                            <span>{event.date}</span>
+                            <span>·</span>
+                            <span style={{ color: '#D4824A' }}>{event.venue}</span>
                         </p>
                     </div>
                 </div>
 
-                <div className="flex items-center gap-6 md:gap-10 justify-between md:justify-end">
+                <div className="flex items-center gap-4 sm:gap-6 md:gap-10 justify-between md:justify-end shrink-0">
                     {/* Status badge */}
                     <span
                         className="text-[9px] md:text-[11px] tracking-[0.25em] uppercase px-4 py-1.5 rounded-full"
