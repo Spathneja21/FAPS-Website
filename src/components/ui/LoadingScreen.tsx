@@ -199,18 +199,18 @@ export default function LoadingScreen() {
 
                     {/* Product image — center, scales up */}
                     <motion.img
-                        src="/preloader-hero.jpg"
+                        src="public\faps-logo-black.png"
                         alt="FAPS"
                         style={{
                             position: 'absolute',
-                            width: 'clamp(240px, 30vw, 420px)',
-                            aspectRatio: '4/3',
+                            width: 'clamp(300px, 30vw, 500px)',
+                            aspectRatio: '1/1',
                             objectFit: 'cover',
                             zIndex: 1,
                             borderRadius: 0,
                         }}
-                        initial={{ scale: 0.6, opacity: 0 }}
-                        animate={{ scale: 1, opacity: 1 }}
+                        initial={{ scale: 0.4, opacity: 0 }}
+                        animate={{ scale: 0.8, opacity: 1 }}
                         transition={{
                             duration: 1.4,
                             ease: REVEAL,
