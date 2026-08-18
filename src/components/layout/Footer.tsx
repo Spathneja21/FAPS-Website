@@ -18,9 +18,9 @@ const statementLine3 = [
 ];
 
 const socialLinks = [
-    { label: 'Instagram', href: 'https://instagram.com' },
-    { label: 'YouTube', href: 'https://youtube.com' },
-    { label: 'LinkedIn', href: 'https://linkedin.com' },
+    { label: 'Instagram', href: 'https://www.instagram.com/faps_tiet/' },
+    { label: 'YouTube', href: 'https://youtube.com/@FAPS_TIET' },
+    { label: 'LinkedIn', href: 'https://linkedin.com/company/fapstiet/' },
 ];
 
 export default function Footer() {
